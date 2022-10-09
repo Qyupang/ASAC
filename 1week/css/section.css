@@ -434,12 +434,13 @@ section .title {
 }
 
 .nav-career-menu {
-  display: flex;
-  border: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
   opacity: 0.6;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 70%;
-  padding: 30px;
   margin-top: 30px;
 }
 
@@ -452,6 +453,8 @@ section .title {
   flex-direction: column;
   align-items: center;
   font-size: 16px;
+  border-left: 1px solid #aaaaaa;
+  padding: 30px;
 }
 
 .nav-career__text {
