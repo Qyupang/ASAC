@@ -8,10 +8,14 @@
 
 [wanted](https://www.wanted.co.kr/)
 
-클론할 페이지:
+#### 클론할 페이지:
 
 ![메인페이지](./img/wanted_main.png)
 -> 메인페이지
 
 ![두번째페이지](./img/wanted_second.png)
 -> 두번째 페이지
+
+#### 구현한 화면
+
+![구현페이지](./img/clone_page.gif)

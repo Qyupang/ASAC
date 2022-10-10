@@ -86,11 +86,11 @@ section .title {
 .career-insight__buttons {
   display: flex;
   margin: 20px auto;
-  width: 65%;
+  width: 1060px;
 }
 
 .career-insight__button {
-  border: 1px solid #3366ff;
+  border: 1px solid #e1e2e3;
   height: 100px;
   position: relative;
   vertical-align: middle;
@@ -104,9 +104,12 @@ section .title {
 .career-insight__button span {
   font-size: 15px;
   line-height: 1.42857143;
-  color: #333333;
-  color: #3366ff;
-  font-weight: 700;
+  /* color: #333333; */
+  color: #888;
+  /* color: #3366ff; */
+  font-weight: 600;
+  outline: none;
+  scroll-snap-align: start;
 }
 
 .career-insight__contents {
@@ -120,6 +123,10 @@ section .title {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+}
+
+.fa-chevron-down {
+  opacity: 1 !important;
 }
 
 .career-insight__content img {
@@ -445,7 +452,7 @@ section .title {
 }
 
 .info {
-  padding: 60px 0px;
+  padding: 10px 0px 50px 0px;
   width: 100vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -465,7 +472,7 @@ section .title {
   opacity: 0.6;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 70%;
+  /* width: 70%; */
   margin-top: 30px;
 }
 
@@ -479,7 +486,9 @@ section .title {
   align-items: center;
   font-size: 16px;
   border-left: 1px solid #aaaaaa;
-  padding: 30px;
+  padding: 18px 0px 0px;
+  width: 264.5px;
+  height: 82px;
 }
 
 .nav-career__text {

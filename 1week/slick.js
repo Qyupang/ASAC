@@ -25,7 +25,7 @@ $(function () {
     centerMode: true,
     variableWidth: true,
     slidesToShow: 10, // 한 화면에 보여질 컨텐츠 개수
-    slidesToScroll: 3, //스크롤 한번에 움직일 컨텐츠 개수
+    slidesToScroll: 5, //스크롤 한번에 움직일 컨텐츠 개수
     arrows: true, // 옆으로 이동하는 화살표 표시 여부
     dots: false, // 스크롤바 아래 점으로 페이지네이션 여부
     prevArrow: "<button type='button' class='slick-prev'>Previous</button>",
