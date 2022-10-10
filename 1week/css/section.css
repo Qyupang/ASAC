@@ -470,3 +470,7 @@ section .title {
   right: 3% !important;
   z-index: 10;
 }
+
+.hidden {
+  visibility: hidden;
+}
