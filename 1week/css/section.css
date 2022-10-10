@@ -1,5 +1,6 @@
 section {
-  width: 85%;
+  /* width: 85%; */
+  width: 1060px;
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -211,7 +212,6 @@ section .title {
 .article-contents {
   display: grid;
   grid-template-columns: repeat(4, 250px);
-  /* grid-template-rows: repeat(1, 270px); */
   gap: 20px;
   padding: 10px;
 }
@@ -253,12 +253,15 @@ section .title {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   gap: 20px;
-  padding: 10px;
+  padding-top: 30px;
 }
 
 .vod-content {
   display: flex;
   flex-direction: column;
+  width: 279px;
+  height: 290px;
+  position: relative;
 }
 
 .vod-content img {
@@ -266,6 +269,24 @@ section .title {
   object-fit: cover;
   outline: 1px solid rgba(0, 0, 0, 0.05);
   outline-offset: -1px;
+  width: 250px;
+  height: 175px;
+}
+
+.runtime {
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 24px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.85;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 143px;
+  right: 40px;
 }
 
 .vod-content__maker {
