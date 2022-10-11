@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-around;
   border-bottom: #e5e5e5 1px solid;
-  padding: 3px 0px 3px 0px;
+  padding: 3px 0px 0px 0px;
   flex-wrap: nowrap;
   position: fixed;
   background: white;
@@ -60,8 +60,7 @@ header {
 }
 
 .header-nav li:hover {
-  border-bottom: 2px solid black;
-  padding: -2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -82,7 +81,7 @@ header {
   left: 60px;
   scale: 0.6;
   color: #5688ff;
-  font-weight: 100;
+  font-weight: 400;
   display: inline-block;
 }
 
@@ -93,7 +92,7 @@ header {
   left: 77px;
   scale: 0.6;
   color: #5688ff;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .right-side {

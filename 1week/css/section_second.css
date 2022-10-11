@@ -288,6 +288,12 @@ main {
   position: relative;
 }
 
+.recruitment a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .recruitment-image {
   width: 250px;
   height: 185px;
