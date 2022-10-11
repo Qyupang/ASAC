@@ -37,6 +37,7 @@ section .title {
   height: 145px;
   border-radius: 4px;
   display: none;
+  animation: fadein 0.6s;
 }
 
 .slick-current .banner-descript {
@@ -563,4 +564,16 @@ section .title {
   bottom: 0px;
   right: 120px;
   z-index: 100;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

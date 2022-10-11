@@ -79,7 +79,8 @@ header {
   content: 'New';
   position: absolute;
   top: 9.5px;
-  font-size: 1px !important;
+  left: 60px;
+  scale: 0.6;
   color: #5688ff;
   font-weight: 100;
   display: inline-block;
@@ -89,7 +90,8 @@ header {
   content: 'Beta';
   position: absolute;
   top: 9.5px;
-  font-size: 1px;
+  left: 77px;
+  scale: 0.6;
   color: #5688ff;
   font-weight: 100;
 }
