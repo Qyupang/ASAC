@@ -43,8 +43,8 @@ $(function () {
     slidesToScroll: 3, //스크롤 한번에 움직일 컨텐츠 개수
     arrows: true, // 옆으로 이동하는 화살표 표시 여부
     dots: false, // 스크롤바 아래 점으로 페이지네이션 여부
-    prevArrow: "<button type='button' class='slick-prev'>Previous</button>",
-    nextArrow: "<button type='button' class='slick-next'>Next</button>",
+    prevArrow: "<button type='button' class='slick-prev1'>Previous</button>",
+    nextArrow: "<button type='button' class='slick-next1'>Next</button>",
     draggable: false, //드래그 가능 여부
   });
 });

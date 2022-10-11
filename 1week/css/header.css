@@ -79,7 +79,7 @@ header {
   content: 'New';
   position: absolute;
   top: 9.5px;
-  font-size: 1px;
+  font-size: 1px !important;
   color: #5688ff;
   font-weight: 100;
   display: inline-block;

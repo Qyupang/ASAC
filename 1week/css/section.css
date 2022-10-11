@@ -1,5 +1,4 @@
 section {
-  /* width: 85%; */
   width: 1060px;
   display: flex;
   justify-content: center;
@@ -18,6 +17,7 @@ section .title {
 .banners {
   margin: 75px auto 0px auto;
   border-radius: 4px;
+  width: 1440px;
   z-index: 1;
 }
 
@@ -36,6 +36,11 @@ section .title {
   width: 330px;
   height: 145px;
   border-radius: 4px;
+  display: none;
+}
+
+.slick-current .banner-descript {
+  display: inline-block;
 }
 
 .banner-descript__text {
@@ -86,7 +91,7 @@ section .title {
 .career-insight__buttons {
   display: flex;
   margin: 20px auto;
-  width: 1060px;
+  width: 1012px;
 }
 
 .career-insight__button {
@@ -497,12 +502,67 @@ section .title {
 }
 
 .slick-prev {
-  left: 3% !important;
-  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.5) !important;
+  font-size: 16px;
+  cursor: pointer;
+  bottom: 0px;
+  left: 120px;
+  z-index: 100;
 }
-.slick-next {
-  right: 3% !important;
-  z-index: 10;
+
+.slick-prev::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.7) !important;
+  font-size: 16px;
+  cursor: pointer;
+  bottom: 0px;
+  left: 120px;
+  z-index: 100;
+}
+
+.slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.7) !important;
+  font-size: 16px;
+  cursor: pointer;
+  bottom: 0px;
+  right: 120px;
+  z-index: 100;
+}
+
+.slick-next::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.7) !important;
+  font-size: 16px;
+  cursor: pointer;
+  bottom: 0px;
+  right: 120px;
+  z-index: 100;
 }
 
 .hidden {
