@@ -564,7 +564,3 @@ section .title {
   right: 120px;
   z-index: 100;
 }
-
-.hidden {
-  visibility: hidden;
-}

@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 @import 'header.css';
 @import 'footer.css';
-@import 'section.css';
+/* @import 'section.css'; */
 
 body {
   font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
@@ -29,7 +29,19 @@ i {
   -webkit-font-smoothing: antialiased;
 }
 
-.slick-prev:before,
+/* .slick-prev:before,
 .slick-next:before {
   color: #444444;
+} */
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
 }

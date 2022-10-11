@@ -11,6 +11,7 @@
       href="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/section.css" />
     <script
       src="https://kit.fontawesome.com/d88055e7df.js"
       crossorigin="anonymous"
@@ -32,7 +33,10 @@
     />
   </head>
   <body>
-    <header>
+    <div class="spinner">
+      <i class="fas fa-spinner fa-10x fa-spin"></i>
+    </div>
+    <header class="hidden">
       <div class="header">
         <div class="left-side">
           <i class="fa-solid fa-bars cursor"></i>
@@ -59,7 +63,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="hidden">
       <section class="main-banner">
         <div class="banners">
           <div class="banner">
@@ -692,7 +696,7 @@
         </nav>
       </section>
     </main>
-    <footer>
+    <footer class="hidden">
       <div class="footer-top">
         <div class="footer-top__left">
           <img
