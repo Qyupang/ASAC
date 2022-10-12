@@ -144,9 +144,13 @@ main {
   width: 700px;
 }
 
+.job-detail__images {
+  display: flex;
+}
+
 .job-detail__image {
   width: 700px;
-  height: 490px;
+  height: 490px !important;
   object-fit: cover;
 }
 
