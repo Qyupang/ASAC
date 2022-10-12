@@ -38,7 +38,6 @@ main {
 .recruitment-descript {
   display: flex;
   flex-direction: column;
-  padding: 14px;
 }
 
 .recruitment-image {
@@ -54,6 +53,7 @@ main {
 .recruitment-title {
   color: #333;
   font-size: 18px;
+  margin-top: 15px;
   width: 250px;
   font-weight: 600;
   line-height: 1.2;
