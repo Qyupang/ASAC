@@ -4,10 +4,19 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.more-positions__title {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  line-height: normal;
+}
+
 .more-positions {
   width: 1060px;
-  margin-top: 30px;
 }
+
 .recruitment-announcement {
   display: flex;
   flex-direction: column;
@@ -21,6 +30,10 @@ main {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 30px;
+}
+
+.recruitments:first-child {
+  margin-top: 20px;
 }
 
 .recruitment {
@@ -123,7 +136,7 @@ main {
 
 .job-detail {
   width: 1060px;
-  height: 6476px;
+  height: 6379px;
   display: flex;
   justify-content: space-between;
   padding: 20px 0px 80px;
@@ -220,11 +233,31 @@ main {
   border-radius: 25px;
 }
 
+.sticky-reward__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sticky-reward__header-icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e1e2e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-share-nodes {
+  color: #36f;
+}
+
 .sticky-reward__bookmark {
   border-color: #36f;
   color: #36f;
   background-color: #fff;
-  /* margin-bottom: 10px; */
 }
 
 .sticky-reward__apply {
@@ -254,6 +287,52 @@ main {
   align-items: center;
   width: 66.86px;
   background-color: #fff;
+}
+
+.sticky-reward__footer {
+  display: flex;
+}
+
+.sticky-reward__people-liked {
+  padding: 2px 0;
+  list-style: none;
+  display: flex;
+  width: 58px;
+  position: relative;
+}
+
+.sticky-reward__people-liked li {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  cursor: pointer;
+}
+
+.first {
+  background-image: url('https://lh3.googleusercontent.com/a/AATXAJyptvBO9pOC55mAwO0IA3-llT_OIJ3QyPcS1-DN=s96-c'),
+    url('https://static.wanted.co.kr/images/userweb/profile_default.png');
+  position: absolute;
+  z-index: 2;
+}
+
+.second {
+  background-image: url('https://k.kakaocdn.net/dn/chOGWm/btrJ7se3l3K/eeQiZuGgc7rBHKj9RBRFk1/img_110x110.jpg'),
+    url('https://static.wanted.co.kr/images/userweb/profile_default.png');
+  position: absolute;
+  z-index: 1;
+  left: 16px;
+}
+
+.third {
+  background-image: url('https://lh3.googleusercontent.com/a/ALm5wu2bYv18aK6_ahAXODnanhRHwCfEqvoUbqKJCBKA=s96-c'),
+    url('https://static.wanted.co.kr/images/userweb/profile_default.png');
+  position: absolute;
+  z-index: 0;
+  left: 32px;
 }
 
 .job-detail__header {
@@ -329,6 +408,12 @@ main {
   height: 80px;
 }
 
+.job-detail-description {
+  margin-bottom: 60px;
+  margin-top: 40px;
+  /* padding-right: 20px; */
+}
+
 .job-detail__tag {
   display: inline-block;
   margin-right: 6px;
@@ -342,4 +427,193 @@ main {
   border-radius: 25px;
   cursor: pointer;
   border: none;
+}
+
+.job-detail__service {
+  display: block;
+  color: #333;
+  font-weight: 400;
+  word-wrap: break-word;
+  /* white-space: pre-wrap; */
+  width: 680px;
+}
+
+.job-detail__service a {
+  cursor: pointer;
+}
+
+p {
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-size: 16px;
+  line-height: 1.75;
+  width: 680px;
+  font-weight: 400;
+  color: #333;
+}
+
+.link {
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+h6 {
+  margin: 20px 0 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.job-detail__tech-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px 8px;
+  gap: 10px 8px;
+  margin-top: 5px;
+}
+
+.job-detail__tech-stack {
+  background-color: #e4f4ec;
+  border-radius: 20px;
+  padding: 9px 14px;
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 600;
+}
+
+.job-detail__anouncement {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  justify-content: space-between;
+  height: 323px;
+  border-top: 1px solid #e1e2e3;
+  padding-top: 20px;
+}
+
+.job-detail__anouncement-header__title {
+  color: #999;
+  width: 80px;
+  font-size: 16px;
+  font-weight: 600;
+  vertical-align: text-top;
+}
+
+.job-detail__anouncement-header__content {
+  color: #333;
+  width: calc(100% - 80px);
+  font-size: 16px;
+  font-weight: 600;
+  vertical-align: text-top;
+}
+
+.job-detail__anouncement-header-date {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.job-detail__anouncement-header-location {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.job-detail__anouncement-location-image {
+  width: 700px;
+}
+
+.job-detail__company {
+  border-radius: 3px;
+  border: 1px solid #e1e2e3;
+  padding: 20px;
+  margin: 80px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  width: 658px;
+}
+
+.job-detail__company__botton-left {
+  display: flex;
+  cursor: pointer;
+}
+
+.job-detail__company-image {
+  background-image: url('https://static.wanted.co.kr/images/wdes/0_5.0852ff23.jpg');
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: 50%;
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 10%);
+  background-repeat: no-repeat;
+  margin: 0px 15px 0px 0px;
+}
+
+.job-detail__company-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-detail__company-name {
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  padding-right: 10px;
+}
+
+.job-detail__company-type {
+  color: #999;
+  font-size: 15px;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+.job-detail__company__button-right {
+  border: 1px solid #e1e2e3;
+  height: 40px;
+  font-size: 15px;
+  color: #36f;
+  background-color: #fff;
+  padding: 0 27px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.job-detail__warning {
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f3f5f8;
+}
+
+.job-detail__warning-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 616.88px;
+}
+
+.job-detail__warning-right span {
+  margin: 0 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #333;
+}
+
+.fa-circle-exclamation {
+  font-size: 24px;
+  line-height: 1.42857143;
+  color: #333;
 }
