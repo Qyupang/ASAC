@@ -1,0 +1,24 @@
+# 웹 개발(2주차)
+
+---
+
+## 22/10/11 ~ 22/10/14(1~4일차)
+
+2주차 목표:
+
+> 자바스크립트 기본 문법 & ES6 문법 익히기
+> [모던자바스크립트](https://ko.javascript.info/) 참고
+
+### 클론할 화면
+
+---
+
+![채용공고상세페이지](./clone_coding/img/untitled.png)
+
+![모달창1](./clone_coding/img/untitled1.png)
+
+![모달창2](./clone_coding/img/untitled2.png)
+
+### 구현한 화면
+
+---
