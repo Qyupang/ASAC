@@ -13,11 +13,11 @@
 
 ---
 
-![채용공고상세페이지](./img/untitled.png)
+![채용공고상세페이지](./img/Untitled.png)
 
-![모달창1](./img/untitled1.png)
+![모달창1](./img/Untitled1.png)
 
-![모달창2](./img/untitled2.png)
+![모달창2](./img/Untitled2.png)
 
 ### 구현한 화면
 
