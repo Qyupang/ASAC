@@ -54,7 +54,7 @@
         </nav>
         <div class="right-side">
           <i class="fa-solid fa-magnifying-glass cursor"></i>
-          <span class="cursor">회원가입/로그인</span>
+          <span class="cursor login-button">회원가입/로그인</span>
           <span>|</span>
           <button class="cursor">기업 서비스</button>
         </div>
@@ -455,6 +455,136 @@
         </ul>
       </section>
     </main>
+    <div class="modal modal-hidden">
+      <div class="login-modal modal-hidden">
+        <div class="login-modal__header">
+          <h1 class="login-modal__logo">wanted</h1> 
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="login-modal__body">
+          <div class="login-modal__body-titles">
+            <h1 class="login-modal__body-title">
+              직장인을 위한 <br> 커리어 플랫폼 원티드!
+            </h1>
+            <h2 class="login-modal__body-subtitle">
+              커리어 성장과 행복을 위한 여정<br>
+              지금 원티드에서 시작하세요.
+            </h2>
+          </div>
+          <form action="" class="email-form">
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="이메일을 입력해주세요.">
+          </form>
+          <div class="login-modal__body-buttons">
+            <button class="login-modal__body-button-email">
+              <i class="fa-regular fa-envelope"></i>
+               이메일로 계속하기
+            </button>
+            <div class="login-modal__body-buttons-text or">or</div>
+            <div class="login-modal__body-buttons-text account-next">다음 계정으로 계속하기</div>
+            <div class="login-modal__body-buttons-sns">
+              <div class="login-modal__body-buttons-sns">
+                <button class="button-kakao modal-button">
+                <div class="image"></div>
+                <div class="button-title">
+                  Kakao
+                </div>
+                </button>
+              </div>
+              <div class="login-modal__body-buttons-sns">
+                <button class="button-facebook modal-button">
+                <div class="image"></div>
+                <div class="button-title">
+                  Facebook
+                </div>
+                </button>
+              </div>
+              <div class="login-modal__body-buttons-sns">
+                <button class="button-google modal-button">
+                <div class="image"></div>
+                <div class="button-title">
+                  Google
+                </div>
+                </button>
+              </div>
+              <div class="login-modal__body-buttons-sns">
+                <button class="button-apple modal-button">
+                <div class="image"></div>
+                <div class="button-title">
+                  Apple
+                </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="login-modal__privacy">
+            걱정마세요! 여러분의 지원 활동은 SNS에 노출되지 않습니다. <br>
+            회원가입 시 <a href="https://help.wanted.co.kr/hc/ko/articles/360035484292">개인정보 처리방침</a>과 <a href="https://help.wanted.co.kr/hc/ko/articles/360035844551">이용약관</a>을 확인하였으며, 동의합니다.
+          </p>
+        </div>
+      </div>
+      <div class="register-modal modal-hidden">
+        <div class="register-modal__header">
+          <h1 class="register-modal__title">회원가입</h1> 
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="login-modal__body">
+          <div class="login-modal__name">
+            <form action="" class="name-form">
+              <label for="username">이름</label>
+              <input type="text-box" id="username" placeholder="이름을 입력해 주세요.">
+            </form>
+          </div>
+          <div class="login-modal__phone-number">
+            <form action="" class="number-form">
+              <label for="phone-number">휴대폰 번호</label>
+              <select name="country" id="select-country">
+                <option value="kor">대한민국 +82</option>
+                <option value="jap">Japan +81</option>
+                <option value="eng">Canada +1</option>
+              </select>
+              <div class="phone-number__box">
+                <input type="tel" id="phone-number" placeholder="(예시)01034567890">
+                <button class="authentication-button">인증번호 받기</button>
+                <input type="text" id="authentication" placeholder="인증번호를 입력해 주세요.">
+            </form>
+              </div>
+              <div class="password">
+                <form action="" class="password-form">
+                  <label for="password">비밀번호</label>
+                  <input type="password" id="password" placeholder="비밀번호를 입력해 주세요.">
+                  <div class="password-guide">
+                    <span>영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합하여 8자 이상 입력해주세요.</span>
+                  </div>
+                </form>
+              </div>
+              <div class="password-confirmation">
+                <label for="password-confirm">비밀번호 확인</label>
+                <input type="password" id="password-confirm" placeholder="비밀번호를 다시 한번 입력해 주세요.">
+              </div>
+              <div class="agreements">
+                <div class="check-all">
+                  <label ><input type="checkbox" name="agree" value="agree-all">전체동의</label>
+                </div>
+                <div class="check-individual">
+                  <div class="essential">
+                    <label><input type="checkbox">개인정보 수집 및 이용 동의 (필수)</label>
+                    <a href="https://help.wanted.co.kr/hc/ko/articles/360040127872">자세히</a>
+                  </div>
+                  <div class="optional">
+                    <label><input type="checkbox">이벤트 소식 등 알림 정보 받기</label>
+                    <a href="https://help.wanted.co.kr/hc/ko/articles/360040540111">자세히</a>
+                  </div>
+                </div>
+              </div>
+                <div class="register-modal__body-button">
+                  <button class="register-modal__body-button-register">
+                     회원가입하기
+                  </button>
+                </div>
+              </div>
+        </div>
+    </div>
     <script src="../js/index.js"></script>
     <script src="../js/slick.js"></script>
   </body>

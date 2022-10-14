@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 @import 'header.css';
 @import 'footer.css';
+@import 'modal.css';
 /* @import 'section.css'; */
 
 body {

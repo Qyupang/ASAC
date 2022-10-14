@@ -54,7 +54,7 @@
         </nav>
         <div class="right-side">
           <i class="fa-solid fa-magnifying-glass cursor"></i>
-          <span class="cursor">회원가입/로그인</span>
+          <span class="cursor login-button">회원가입/로그인</span>
           <span>|</span>
           <button class="cursor">기업 서비스</button>
         </div>
@@ -821,8 +821,8 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <div class="login-modal">
+    <div class="modal modal-hidden">
+      <div class="login-modal modal-hidden">
         <div class="login-modal__header">
           <h1 class="login-modal__logo">wanted</h1> 
           <i class="fa-solid fa-xmark"></i>
@@ -889,10 +889,7 @@
           </p>
         </div>
       </div>
-    </div>
-
-    <div class="modal">
-      <div class="register-modal">
+      <div class="register-modal modal-hidden">
         <div class="register-modal__header">
           <h1 class="register-modal__title">회원가입</h1> 
           <i class="fa-solid fa-xmark"></i>
@@ -915,7 +912,7 @@
               <div class="phone-number__box">
                 <input type="tel" id="phone-number" placeholder="(예시)01034567890">
                 <button class="authentication-button">인증번호 받기</button>
-                <input type="number" id="authentication" placeholder="인증번호를 입력해 주세요.">
+                <input type="text" id="authentication" placeholder="인증번호를 입력해 주세요.">
             </form>
               </div>
               <div class="password">
@@ -938,11 +935,11 @@
                 <div class="check-individual">
                   <div class="essential">
                     <label><input type="checkbox">개인정보 수집 및 이용 동의 (필수)</label>
-                    <span>자세히</span>
+                    <a href="https://help.wanted.co.kr/hc/ko/articles/360040127872">자세히</a>
                   </div>
                   <div class="optional">
                     <label><input type="checkbox">이벤트 소식 등 알림 정보 받기</label>
-                    <span>자세히</span>
+                    <a href="https://help.wanted.co.kr/hc/ko/articles/360040540111">자세히</a>
                   </div>
                 </div>
               </div>
@@ -953,7 +950,6 @@
                 </div>
               </div>
         </div>
-      </div>
     </div>
 
     <script src="../js/slick.js"></script>
