@@ -1,7 +1,7 @@
 .login-modal {
   width: 400px;
   height: 680px;
-  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .login-modal__header {
@@ -172,17 +172,11 @@
   cursor: pointer;
 }
 
-/* .login-modal {
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-  } */
-
 .register-modal {
   width: 400px;
   height: 870.7px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-radius: 5px;
 }
 
 .register-modal__header {
@@ -429,6 +423,10 @@
 
   transform: translateX(-50%) translateY(-50%);
   z-index: 11;
+}
+
+.register-modal::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-body {
