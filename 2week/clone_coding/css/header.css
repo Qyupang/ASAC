@@ -60,8 +60,9 @@ header {
 }
 
 .header-nav li:hover {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  top: 1px;
 }
 
 .cursor:hover {
@@ -105,7 +106,7 @@ header {
   font: #757575;
 }
 
-.right-side button {
+.right-side a {
   border-radius: 15px;
   padding: 5px 8px;
   font-size: 13px;
