@@ -35,9 +35,17 @@ footer {
   font-size: 15px;
 }
 
+.footer-nav li {
+  cursor: pointer;
+}
+
 .sns {
   display: flex;
   justify-content: space-between;
+}
+
+.sns img {
+  cursor: pointer;
 }
 
 .footer-bottom {

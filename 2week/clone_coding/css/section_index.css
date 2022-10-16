@@ -107,6 +107,11 @@ section .title {
   margin: 10px;
 }
 
+.career-insight__button:hover {
+  color: #888;
+  background-color: #e1e2e3;
+}
+
 .career-insight__button span {
   font-size: 15px;
   line-height: 1.42857143;
@@ -457,6 +462,11 @@ section .title {
   font-weight: 700;
 }
 
+.subscribe-button:hover {
+  color: #fff;
+  background-color: #002fdb;
+}
+
 .info {
   padding: 10px 0px 50px 0px;
   width: 100vw;
@@ -495,6 +505,7 @@ section .title {
   padding: 18px 0px 0px;
   width: 264.5px;
   height: 82px;
+  cursor: pointer;
 }
 
 .nav-career__text {

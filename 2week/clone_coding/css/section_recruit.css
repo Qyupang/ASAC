@@ -52,6 +52,7 @@ section {
   font-size: 15px;
   border-radius: 50%;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .blue {
