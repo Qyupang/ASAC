@@ -129,8 +129,11 @@ window.addEventListener('click', (e) => {
 
 more.addEventListener('click', () => {
   const moreSection = document.querySelector('.job-detail__warning-bottom');
-  const jobDetail = document.querySelector('.job-detail');
+  const jobDetail = document.querySelector('.more-positions');
   moreSection.classList.toggle('detail-hidden');
-  let height = jobDetail.style.offsetHeight;
-  console.log(height);
+  if (moreSection.classList.contains('detail-hidden')) {
+    jobDetail.style.marginTop = '0px';
+  } else {
+    jobDetail.style.marginTop = '140px';
+  }
 });
