@@ -2,7 +2,7 @@
 @import 'header.css';
 @import 'footer.css';
 /* @import 'modal.css'; */
-/* @import 'section.css'; */
+@import 'section_index.css';
 
 body {
   font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
