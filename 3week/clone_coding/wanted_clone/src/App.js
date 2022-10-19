@@ -1,13 +1,10 @@
-import Header from './Header';
-import Footer from './Footer';
-import Section from './Section';
+import MainPage from './MainPage';
 
 function App() {
   return (
     <div className="root">
-      <Header />
-      <Section />
-      <Footer />
+      <MainPage />
+      {/* <Joblist/> */}
     </div>
   );
 }

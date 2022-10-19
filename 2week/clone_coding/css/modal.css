@@ -390,9 +390,11 @@
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 
   width: 100%;
   height: 100%;
@@ -400,7 +402,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   mix-blend-mode: normal;
 
-  z-index: 10;
+  z-index: 9;
 }
 
 .login-modal {
@@ -439,4 +441,27 @@
   padding-bottom: 40px;
   background-color: #fff;
   height: 50px;
+}
+
+.job-detail__warning {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-deatil__warning-top {
+  display: flex;
+  align-items: center;
+}
+
+.job-deatil__warning-bottom {
+  border-top: 1px solid #ececec;
+  width: 700px;
+  height: 164px;
+}
+
+.job-detail__warning-bottom p {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 13px 30px 30px;
+  color: #666;
 }

@@ -41,3 +41,7 @@ i {
 .hidden {
   display: none;
 }
+
+.detail-hidden {
+  display: none;
+}
