@@ -1,0 +1,54 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import 'header.css';
+/* @import 'footer.css';
+@import 'modal.css'; */
+/* @import 'section.css'; */
+
+body {
+  font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
+    system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial,
+    Apple SD Gothic Neo, Nanum Gothic, Malgun Gothic, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  display: inline-block;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 800;
+  content: '\f014';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
