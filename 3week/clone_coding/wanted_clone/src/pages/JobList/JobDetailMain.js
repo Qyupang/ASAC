@@ -5,13 +5,13 @@ import TopSectionCompany from './TopSectionCompany';
 const JobDetailMain = () => {
   return (
     <main>
-      <section class="top-section">
-        <div class="bookmark">
-          <i class="fa-solid fa-bookmark"></i>
+      <section className="top-section">
+        <div className="bookmark">
+          <i className="fa-solid fa-bookmark"></i>
           북마크 모아보기 &gt;
         </div>
-        <span class="top-section__title"> 적극 채용 중인 회사 </span>
-        <div class="top-setion__companies">
+        <span className="top-section__title"> 적극 채용 중인 회사 </span>
+        <div className="top-setion__companies">
           <TopSectionCompany
             imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F216%2Fpdgjch6eg5ajfdfm__400_400.jpg&w=400&q=75"
             logoSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.799382a7.jpg&w=100&q=75"
@@ -44,8 +44,8 @@ const JobDetailMain = () => {
           />
         </div>
       </section>
-      <section class="recruitment-announcement">
-        <ul class="recruitments">
+      <section className="recruitment-announcement">
+        <ul className="recruitments">
           <Recruit
             imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2Feh1mycy7nnltf5ah__1080_790.jpg&w=1000&q=75"
             recruitTitle="웹 프론트엔드 개발자(React)"
@@ -79,7 +79,7 @@ const JobDetailMain = () => {
             incentive="채용보상금 1,000,000원"
           />
         </ul>
-        <ul class="recruitments">
+        <ul className="recruitments">
           <Recruit
             imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22152%2Fzfcvnwqkqwrddima__400_400.png&w=400&q=75"
             recruitTitle="머신러닝 엔지니어"
@@ -113,7 +113,7 @@ const JobDetailMain = () => {
             incentive="채용보상금 1,000,000원"
           />
         </ul>
-        <ul class="recruitments">
+        <ul className="recruitments">
           <Recruit
             imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F18482%2Fk3wjsyzzomlui7yq__400_400.jpg&w=400&q=75"
             recruitTitle="로봇 응용 S/W 엔지니어 (선임-책임급)"
@@ -153,7 +153,7 @@ const JobDetailMain = () => {
             incentive="채용보상금 1,000,000원"
           />
         </ul>
-        <ul class="recruitments">
+        <ul className="recruitments">
           <Recruit
             imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75"
             recruitTitle="iOS 개발자

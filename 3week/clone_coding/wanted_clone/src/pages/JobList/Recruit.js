@@ -9,15 +9,15 @@ const Recruit = ({
   incentive,
 }) => {
   return (
-    <li class="recruitment">
+    <li className="recruitment">
       <a href="./recruit_detail.html">
-        <img src={imgSrc} alt="" class="recruitment-image" />
-        <i class="fa-solid fa-bookmark bookmark-icon"></i>
-        <span class="recruitment-title">{recruitTitle}</span>
-        <span class="recruitment-company">{companyName}</span>
-        <div class="response-rate">{responseRate}</div>
-        <span class="location">{location}</span>
-        <span class="incentive">{incentive}</span>
+        <img src={imgSrc} alt="" className="recruitment-image" />
+        <i className="fa-solid fa-bookmark bookmark-icon"></i>
+        <span className="recruitment-title">{recruitTitle}</span>
+        <span className="recruitment-company">{companyName}</span>
+        <div className="response-rate">{responseRate}</div>
+        <span className="location">{location}</span>
+        <span className="incentive">{incentive}</span>
       </a>
     </li>
   );

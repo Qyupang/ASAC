@@ -3,45 +3,45 @@ import CategoryButton from './CategoryButton';
 
 const JobDetailCategory = () => {
   return (
-    <section class="category">
-      <div class="category-wrap">
-        <div class="category-top">
-          <div class="category-top__career">
-            <div class="category-top__career-type">
+    <section className="category">
+      <div className="category-wrap">
+        <div className="category-top">
+          <div className="category-top__career">
+            <div className="category-top__career-type">
               <span>개발</span>
-              <div class="button">
-                <i class="fa-solid fa-chevron-down"></i>
+              <div className="button">
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
             </div>
-            <div class="bar">|</div>
-            <div class="category-top__career-detail">
+            <div className="bar">|</div>
+            <div className="category-top__career-detail">
               <span>개발 전체</span>
-              <div class="button">
-                <i class="fa-solid fa-chevron-down"></i>
+              <div className="button">
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
             </div>
           </div>
-          <div class="category-top__selections">
-            <div class="category-top__selection-left">
-              <div class="category-top__selection-region">
+          <div className="category-top__selections">
+            <div className="category-top__selection-left">
+              <div className="category-top__selection-region">
                 <span>지역 </span>
-                <span class="blue">한국</span>
-                <span class="category-top__selected-num">1</span>
+                <span className="blue">한국</span>
+                <span className="category-top__selected-num">1</span>
               </div>
-              <div class="category-top__selection-career">
-                <div class="career-all">
+              <div className="category-top__selection-career">
+                <div className="career-all">
                   <span>경력 </span>
-                  <span class="blue">전체 </span>
-                  <i class="fa-solid fa-sort-down"></i>
+                  <span className="blue">전체 </span>
+                  <i className="fa-solid fa-sort-down"></i>
                 </div>
               </div>
-              <div class="category-top__selection-tech">
-                <div class="tech">
-                  기술스택 <i class="fa-solid fa-sort-down"></i>
+              <div className="category-top__selection-tech">
+                <div className="tech">
+                  기술스택 <i className="fa-solid fa-sort-down"></i>
                 </div>
               </div>
             </div>
-            <div class="category-top__selection-right">
+            <div className="category-top__selection-right">
               <select name="sorting" id="sorting">
                 <option value="response">응답률순</option>
                 <option value="recently">최신순</option>
@@ -51,7 +51,7 @@ const JobDetailCategory = () => {
             </div>
           </div>
         </div>
-        <div class="category-bottons">
+        <div className="category-bottons">
           <CategoryButton keyword="연봉이 최고의 복지 💰" />
           <CategoryButton keyword="재택근무 🏠" />
           <CategoryButton keyword="퇴사율 10% 이하 📍" />

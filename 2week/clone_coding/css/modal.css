@@ -442,26 +442,3 @@
   background-color: #fff;
   height: 50px;
 }
-
-.job-detail__warning {
-  display: flex;
-  flex-direction: column;
-}
-
-.job-deatil__warning-top {
-  display: flex;
-  align-items: center;
-}
-
-.job-deatil__warning-bottom {
-  border-top: 1px solid #ececec;
-  width: 700px;
-  height: 164px;
-}
-
-.job-detail__warning-bottom p {
-  font-size: 13px;
-  line-height: 24px;
-  padding: 13px 30px 30px;
-  color: #666;
-}

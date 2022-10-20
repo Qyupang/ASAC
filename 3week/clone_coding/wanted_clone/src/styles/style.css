@@ -2,8 +2,10 @@
 @import 'header.css';
 @import 'footer.css';
 /* @import 'modal.css'; */
-@import 'section_index.css';
-@import 'section_recruit.css';
+/* @import 'section_index.css'; */
+/* @import 'section_recruit.css'; */
+/* @import 'section_recruit_detail.css'; */
+
 body {
   font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
     system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial,

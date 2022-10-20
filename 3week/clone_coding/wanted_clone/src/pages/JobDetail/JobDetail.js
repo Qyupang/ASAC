@@ -1,19 +1,17 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import JobListMain from './JobDetailMain';
-import JobListCategory from './JobDetailCategory';
+import JobDetailMain from './JobDetailMain';
 import '../../styles/style.css';
 
-const JobList = () => {
+const JobDetail = () => {
   return (
     <div className="root">
       <Header />
-      <JobListCategory />
-      <JobListMain />
+      <JobDetailMain />
       <Footer />
     </div>
   );
 };
 
-export default JobList;
+export default JobDetail;
