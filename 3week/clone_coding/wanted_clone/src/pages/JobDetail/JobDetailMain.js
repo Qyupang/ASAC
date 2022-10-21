@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../styles/style.css';
 import '../../styles/section_recruit_detail.css';
-import JobDetailImage from './JobDetailImage';
 import JobDetailTag from './JobDetailTag';
 import JobDetailTechStack from './JobDetailTechStack';
 import Recruit from '../JobList/Recruit';
+import JobDetailSlider from './JobDetailSlider';
 import '../../asset/img/map.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
@@ -15,10 +15,7 @@ const JobDetailMain = () => {
       <section className="job-detail">
         <div className="job-detail__main">
           <div className="job-detail__images">
-            <JobDetailImage imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2Feh1mycy7nnltf5ah__1080_790.jpg&w=1000&q=75" />
-            <JobDetailImage imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2Fdvcf627tgxatpg7v__1080_790.jpg&w=1000&q=75" />
-            <JobDetailImage imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2F6kxgpommhvckijjr__1080_790.jpg&w=1000&q=75" />
-            <JobDetailImage imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2Fvym9cwwcigp2tzbi__1080_790.jpg&w=1000&q=75" />
+            <JobDetailSlider />
           </div>
           <div className="job-detail__header">
             <div className="job-detail__header-top">
