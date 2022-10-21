@@ -6,7 +6,7 @@ import '../../styles/style.css';
 
 const JobDetail = () => {
   return (
-    <div className="root">
+    <div>
       <Header />
       <JobDetailMain />
       <Footer />
