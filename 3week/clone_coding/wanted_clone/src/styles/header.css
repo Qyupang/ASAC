@@ -1,10 +1,9 @@
 header {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   border-bottom: #e5e5e5 1px solid;
-  padding: 3px 0px 0px 0px;
-  flex-wrap: nowrap;
+  padding-top: 3px;
   position: fixed;
   background: white;
   z-index: 10;

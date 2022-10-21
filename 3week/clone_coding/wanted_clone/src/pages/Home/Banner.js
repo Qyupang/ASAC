@@ -5,7 +5,7 @@ const Banner = ({ imgSrc, title, descript }) => {
   return (
     <div className="banner">
       <img src={imgSrc} alt="" width="100%" height="300px" />
-      <BannerDescript title descript />
+      <BannerDescript title={title} descript={descript} />
     </div>
   );
 };

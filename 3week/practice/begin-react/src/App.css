@@ -3,3 +3,9 @@
   width: 64px;
   height: 64px;
 }
+
+.carousel {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

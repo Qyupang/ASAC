@@ -6,6 +6,8 @@ import JobDetailTag from './JobDetailTag';
 import JobDetailTechStack from './JobDetailTechStack';
 import Recruit from '../JobList/Recruit';
 import '../../asset/img/map.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 const JobDetailMain = () => {
   return (
@@ -490,7 +492,8 @@ const JobDetailMain = () => {
             </ul>
           </div>
           <button className="sticky-reward__bookmark sticky-btn">
-            <i className="fa-solid fa-bookmark bookmark-icon"></i>
+            {/* <i className="fa-solid fa-bookmark bookmark-icon"></i>fa-solid fa-bookmark bookmark-icon */}
+            <FontAwesomeIcon icon={faBookmark} className="bookmark-icon" />
             북마크하기
           </button>
           <button className="sticky-reward__apply sticky-btn">지원하기</button>

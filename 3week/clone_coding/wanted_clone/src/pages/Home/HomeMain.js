@@ -6,96 +6,22 @@ import VodContent from './VodContent';
 import EventContent from './EventContent';
 import InsightButton from './InsightButton';
 import CareerNav from './CareerNav';
-import Banner from './Banner';
+import BannerSlider from './BannerSlider';
 
 const Section = () => {
   return (
     <main>
       <section className="main-banner">
         <div className="banners">
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100"
-            title="
-                    기업이 원하는 프론트엔드 개발자 되기
-                  "
-            descript="
-                    프리온보딩 프론트엔드 코스
-                  "
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1825%2Fb93ecf4e.jpg&w=1060&q=100"
-            title="
-                    마키나락스에 세로 들어와!
-                  "
-            descript="
-                    적극 채용 중인 포지션을 영상으로 확인하세요!
-                  "
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1852%2F41073f1a.jpg&w=1060&q=100"
-            title="
-                    단 4주! 백엔드 신입딱지 떼기
-                  "
-            descript="프리온보딩 백엔드 코스"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100"
-            title="
-                    원티드긱스 <개발자의 달>
-                  "
-            descript="프리랜서 개발자를 위한 이벤트"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1791%2F19d8e5bf.jpg&w=1060&q=100"
-            title="
-                    우리 회사를 소개합니다
-                  "
-            descript="원티드가 들려주는 진짜 회사이야기"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1835%2F487d8bb0.jpg&w=1060&q=100"
-            title="
-                    Startup Lead Gruop Coaching
-                  "
-            descript="스타트업 팀장을 위한 그룹 코칭"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1850%2F43625ed8.jpg&w=1060&q=100"
-            title="
-                    10월 원티드살롱
-                  "
-            descript="HR담당자를 위한 네트워킹"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100"
-            title="
-                    [FREE] GDSC Job Fair Live
-                  "
-            descript="국내 최고 스타트업 채용소식을 볼 수 있는 기회!"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1853%2F2464b111.jpg&w=1060&q=100"
-            title="
-                    리텐션 높이는 '아하 모먼트'를 찾아서
-                  "
-            descript="성공을 리드하는 번개장터 마케터"
-          />
-          <Banner
-            imgSrc="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100"
-            title="
-                    롯데헬스케어에 세로들어와!
-                  "
-            descript="적극 채용 중인 포지션을 영상으로 확인하세요!"
-          />
+          <BannerSlider />
         </div>
       </section>
-      {/* <!-- <section className="slide"></section> --> */}
       <section className="career-insight">
         <span className="title">
           나에게 필요한 커리어 인사이트
           <i className="fa-regular fa-circle-question"></i>
         </span>
-        <div className="career-insight__buttons">
+        {/* <div className="career-insight__buttons">
           <InsightButton content="리더십" />
           <InsightButton content="라이프스타일" />
           <InsightButton content="인간관계" />
@@ -116,7 +42,7 @@ const Section = () => {
           <InsightButton content="마케팅" />
           <InsightButton content="경영/전략" />
           <InsightButton content="콘텐츠 제작" />
-        </div>
+        </div> */}
         <div className="career-insight__contents">
           <InsightContent
             imgSrc="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FcK73%2Fimage%2FjpGay3WOoMl_URviAArdk0P6Urk.JPG&w=500&q=75"

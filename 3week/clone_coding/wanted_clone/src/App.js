@@ -5,8 +5,8 @@ import JobDetail from './pages/JobDetail/JobDetail';
 function App() {
   return (
     <div className="root">
-      {/* <MainPage /> */}
-      <Joblist />
+      <MainPage />
+      {/* <Joblist /> */}
       {/* <JobDetail /> */}
     </div>
   );

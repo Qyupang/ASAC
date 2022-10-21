@@ -24,15 +24,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-i {
+/* i {
   display: inline-block;
   font-family: 'Font Awesome 5 Free';
   font-weight: 800;
@@ -41,7 +45,7 @@ i {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
 .spinner {
   display: flex;
@@ -53,4 +57,8 @@ i {
 
 .hidden {
   display: none;
+}
+
+.slcik-track {
+  overflow-y: hidden;
 }

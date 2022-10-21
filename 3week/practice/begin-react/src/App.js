@@ -1,8 +1,12 @@
 import React from 'react';
-import InputSample from './InputSample';
+import SimpleSlider from './SimpleSlider';
 
 function App() {
-  return <InputSample />;
+  return (
+    <div>
+      <SimpleSlider />
+    </div>
+  );
 }
 
 export default App;
