@@ -1,13 +1,10 @@
 /* 두번쨰 페이지 */
-section {
+.category {
+  margin: 0 auto;
   width: 1060px;
   display: flex;
   justify-content: center;
   margin-top: 30px;
-}
-
-.category {
-  margin: 0 auto;
 }
 
 .category-wrap {
@@ -167,9 +164,11 @@ select {
   background-color: #f7f2f9;
 }
 
-main {
+.job-list__main {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 30px;
+  width: 100vw;
 }
 
 .top-section {
@@ -177,6 +176,9 @@ main {
   flex-direction: column;
   width: 1060px;
   margin-bottom: 10px;
+
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .bookmark {
@@ -274,6 +276,7 @@ main {
   align-items: center;
   justify-content: space-around;
   width: 1060px;
+  margin-top: 30px;
 }
 
 .recruitments {

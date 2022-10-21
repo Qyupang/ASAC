@@ -1,13 +1,13 @@
-section {
+section .title {
+  font-size: 20px;
+  font: #757575;
+}
+
+.main-banner {
   width: 1060px;
   display: flex;
   justify-content: center;
   margin-top: 30px;
-}
-
-section .title {
-  font-size: 20px;
-  font: #757575;
 }
 
 .fa-circle-question {
@@ -87,6 +87,10 @@ section .title {
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding: 60px;
+
+  width: 1060px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .career-insight__buttons {
@@ -213,6 +217,10 @@ section .title {
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding: 60px;
+
+  width: 1060px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .section-title {
@@ -265,6 +273,10 @@ section .title {
   flex-direction: column;
   align-items: center;
   padding: 60px;
+
+  width: 1060px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .vod-contents {
@@ -349,6 +361,10 @@ section .title {
   flex-direction: column;
   align-items: center;
   padding: 60px 0px 0px 0px;
+
+  width: 1060px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .event-contents {
@@ -404,6 +420,10 @@ section .title {
   background-color: #f7f7f7;
   width: 100%;
   padding: 60px 0px;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .subscribe-wrap {
@@ -471,6 +491,9 @@ section .title {
   padding: 10px 0px 50px 0px;
   width: 100vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .nav-carear-info {

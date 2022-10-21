@@ -4,7 +4,7 @@ import TopSectionCompany from './TopSectionCompany';
 
 const JobDetailMain = () => {
   return (
-    <main>
+    <main className="job-list__main">
       <section className="top-section">
         <div className="bookmark">
           <i className="fa-solid fa-bookmark"></i>

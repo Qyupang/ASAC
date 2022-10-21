@@ -9,7 +9,7 @@ import '../../asset/img/map.png';
 
 const JobDetailMain = () => {
   return (
-    <main>
+    <main className="main">
       <section className="job-detail">
         <div className="job-detail__main">
           <div className="job-detail__images">
