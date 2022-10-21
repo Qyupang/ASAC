@@ -4,7 +4,7 @@ import InsightContent from './InsightContent';
 import ArticleContent from './ArticleContent';
 import VodContent from './VodContent';
 import EventContent from './EventContent';
-import InsightButton from './InsightButton';
+import InsightButtonSlider from './InsightButtonSlider';
 import CareerNav from './CareerNav';
 import BannerSlider from './BannerSlider';
 
@@ -21,28 +21,9 @@ const Section = () => {
           나에게 필요한 커리어 인사이트
           <i className="fa-regular fa-circle-question"></i>
         </span>
-        {/* <div className="career-insight__buttons">
-          <InsightButton content="리더십" />
-          <InsightButton content="라이프스타일" />
-          <InsightButton content="인간관계" />
-          <InsightButton content="취업/이직" />
-          <InsightButton content="회사생활" />
-          <InsightButton content="IT/기술" />
-          <InsightButton content="커리어고민" />
-          <InsightButton content="조직문화" />
-          <InsightButton content="개발" />
-          <InsightButton content="데이터" />
-          <InsightButton content="MD" />
-          <InsightButton content="HR" />
-          <InsightButton content="UX/UI" />
-          <InsightButton content="노무" />
-          <InsightButton content="디자인" />
-          <InsightButton content="서비스기획" />
-          <InsightButton content="브랜딩" />
-          <InsightButton content="마케팅" />
-          <InsightButton content="경영/전략" />
-          <InsightButton content="콘텐츠 제작" />
-        </div> */}
+        <div className="career-insight__buttons">
+          <InsightButtonSlider />
+        </div>
         <div className="career-insight__contents">
           <InsightContent
             imgSrc="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FcK73%2Fimage%2FjpGay3WOoMl_URviAArdk0P6Urk.JPG&w=500&q=75"
