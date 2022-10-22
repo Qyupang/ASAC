@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CategoryButton = ({ keyword }) => {
-  return <button className="category-botton keyword">{keyword}</button>;
+  return <button className="category-button keyword">{keyword}</button>;
 };
 
 export default CategoryButton;

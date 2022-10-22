@@ -137,7 +137,7 @@ select {
   font-size: 14px;
 }
 
-.category-botton {
+.category-button {
   font-size: 13px;
   margin: 0px 8px 0px 0px;
   padding: 8px 14px;
@@ -145,24 +145,21 @@ select {
   border-radius: 30px;
   height: 100%;
   cursor: pointer;
+  background-color: #f3f3fb;
 }
 
-.category-botton:hover {
+.category-button:hover {
   border: 1px solid #3366ff;
   padding: 7px 14px;
 }
 
-.category-botton:nth-child(n) {
-  background-color: #f3f3fb;
-}
-
-.category-botton:nth-child(2n) {
+/* .category-buttons:nth-child(2n) {
   background-color: #f2fbf5;
 }
 
-.category-botton:nth-child(5n) {
+.category-buttons:nth-child(5n) {
   background-color: #f7f2f9;
-}
+} */
 
 .job-list__main {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
