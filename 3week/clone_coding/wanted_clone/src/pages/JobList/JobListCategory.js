@@ -1,7 +1,7 @@
 import React from 'react';
 import CategoryButton from './CategoryButton';
 
-const JobDetailCategory = () => {
+const JobListCategory = () => {
   return (
     <section className="category">
       <div className="category-wrap">
@@ -72,4 +72,4 @@ const JobDetailCategory = () => {
   );
 };
 
-export default JobDetailCategory;
+export default JobListCategory;

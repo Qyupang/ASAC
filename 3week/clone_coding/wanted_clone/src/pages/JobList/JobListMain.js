@@ -2,7 +2,7 @@ import React from 'react';
 import Recruit from './Recruit';
 import TopSectionCompany from './TopSectionCompany';
 
-const JobDetailMain = () => {
+const JobListMain = () => {
   return (
     <main className="job-list__main">
       <section className="top-section">
@@ -195,4 +195,4 @@ const JobDetailMain = () => {
   );
 };
 
-export default JobDetailMain;
+export default JobListMain;

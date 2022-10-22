@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
-import JobListMain from './JobDetailMain';
-import JobListCategory from './JobDetailCategory';
+import JobListMain from './JobListMain';
+import JobListCategory from './JobListCategory';
 import '../../styles/style.css';
 
 const JobList = () => {
