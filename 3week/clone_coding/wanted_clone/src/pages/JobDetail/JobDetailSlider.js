@@ -6,7 +6,7 @@ import JobDetailImage from './JobDetailImage';
 
 const JobDetailSlider = () => {
   const settings = {
-    className: '.job-detail__image', //슬라이드 되어야 할 태그
+    className: '.job-detail__images', //슬라이드 되어야 할 태그
     variableWidth: true,
     dots: true,
     draggable: true, //드래그 가능 여부
