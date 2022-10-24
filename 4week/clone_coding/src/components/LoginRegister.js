@@ -1,13 +1,10 @@
 import React from 'react';
 import LoginModal from './LoginModal';
-import RegisterModal from './RegisterModal';
+// import RegisterModal from './RegisterModal';
+import '../styles/modal.css';
 
-const LoginRegister = () => {
-  return (
-    <div className="modal">
-      <LoginModal />
-    </div>
-  );
+const LoginRegister = ({ setLoginModalOpen }) => {
+  return <LoginModal setLoginModalOpen={setLoginModalOpen} />;
 };
 
 export default LoginRegister;

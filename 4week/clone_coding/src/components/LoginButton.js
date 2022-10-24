@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import LoginModal from './LoginModal';
+import LoginRegister from './LoginRegister';
 
 const LoginButton = () => {
   const [loginModalOpen, setLoginModalOpen] = useState(false);
@@ -14,7 +14,9 @@ const LoginButton = () => {
       <span className="cursor login-button" onClick={showLoginModal}>
         회원가입/로그인
       </span>
-      {loginModalOpen && <LoginModal setLoginModalOpen={setLoginModalOpen} />}
+      {loginModalOpen && (
+        <LoginRegister setLoginModalOpen={setLoginModalOpen} />
+      )}
     </div>
   );
 };
