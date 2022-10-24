@@ -1,30 +1,21 @@
 import { useState } from 'react';
-import NameView from './nameView';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PageA from './PageA';
+import PageB from './PageB';
+import PageC from './PageC';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [name, setName] = useState('현규');
-
-  const countMin = () => {
-    setCount(count - 1);
-  };
-
-  const countAdd = () => {
-    setCount(count + 1);
-  };
-
   return (
     <div>
-      <CountView counts={count} />
-      <button onClick={countMin}>-</button>
-      <button onClick={countAdd}>+</button>
-      <NameView name={name} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PageA />} />
+          <Route path="/b" element={<PageB />} />
+          <Route path="/c" element={<PageC />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
-const CountView = ({ counts }) => {
-  return <h1>{counts}</h1>;
-};
 
 export default App;

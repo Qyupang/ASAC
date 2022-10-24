@@ -1,7 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const nameView = ({ name }) => {
-  return <div>{name}</div>;
+const NameView = (props) => {
+
+  return (
+      <Link to={props}
+  )
 };
 
-export default nameView;
+export default NameView;
