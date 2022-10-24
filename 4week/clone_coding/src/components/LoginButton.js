@@ -3,20 +3,18 @@ import { useState } from 'react';
 import LoginRegister from './LoginRegister';
 
 const LoginButton = () => {
-  const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
-  const showLoginModal = () => {
-    setLoginModalOpen(true);
+  const showModal = () => {
+    setModalOpen(true);
   };
 
   return (
     <div>
-      <span className="cursor login-button" onClick={showLoginModal}>
+      <span className="cursor login-button" onClick={showModal}>
         회원가입/로그인
       </span>
-      {loginModalOpen && (
-        <LoginRegister setLoginModalOpen={setLoginModalOpen} />
-      )}
+      {modalOpen && <LoginRegister setModalOpen={setModalOpen} />}
     </div>
   );
 };
