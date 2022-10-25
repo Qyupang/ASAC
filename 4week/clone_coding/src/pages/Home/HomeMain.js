@@ -7,10 +7,10 @@ import EventContent from './EventContent';
 import InsightButtonSlider from './InsightButtonSlider';
 import CareerNav from './CareerNav';
 import BannerSlider from './BannerSlider';
-import dummyForContent from '../../db/insightContent.json';
-import dummyForArticle from '../../db/articleContent.json';
-import dummyForVod from '../../db/vodContent.json';
-import dummyForEvent from '../../db/eventContent.json';
+import dummyForContent from '../../db/MainPage/insightContent.json';
+import dummyForArticle from '../../db/MainPage/articleContent.json';
+import dummyForVod from '../../db/MainPage/vodContent.json';
+import dummyForEvent from '../../db/MainPage/eventContent.json';
 
 const Section = () => {
   return (

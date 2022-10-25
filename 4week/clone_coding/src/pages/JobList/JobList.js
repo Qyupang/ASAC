@@ -7,7 +7,6 @@ import '../../styles/style.css';
 const JobList = () => {
   return (
     <div className="root">
-      <Header />
       <JobListCategory />
       <JobListMain />
     </div>

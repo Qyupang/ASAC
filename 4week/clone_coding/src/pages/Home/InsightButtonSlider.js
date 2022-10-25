@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import InsightButton from './InsightButton';
-import dummyForButton from '../../db/insightButton.json';
+import dummyForButton from '../../db/MainPage/insightButton.json';
 
 const InsightButtonSlider = () => {
   const settings = {

@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Banner from './Banner';
-import dummyForBanner from '../../db/banner.json';
+import dummyForBanner from '../../db/MainPage/banner.json';
 
 const BannerSlider = () => {
   const settings = {
