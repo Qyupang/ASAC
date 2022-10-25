@@ -7,14 +7,12 @@ const LoginModal = ({ setLoginModalopen, setRegisterModalOpen }) => {
   const showRegisterModal = () => {
     setRegisterModalOpen(true);
   };
-  const closeRegisterModal = () => {
-    setRegisterModalOpen(false);
-  };
+
   return (
     <div className="login-modal">
       <div className="login-modal__header">
         <h1 className="login-modal__logo">wanted</h1>
-        <i className="fa-solid fa-xmark" onClick={closeRegisterModal}></i>
+        <i className="fa-solid fa-xmark" onClick={closeLoginModal}></i>
       </div>
       <div className="login-modal__body">
         <div className="login-modal__body-titles">

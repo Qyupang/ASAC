@@ -1,13 +1,20 @@
 import MainPage from './pages/Home/MainPage';
 import Joblist from './pages/JobList/JobList';
 import JobDetail from './pages/JobDetail/JobDetail';
+import Header from './components/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="root">
-      {/* <MainPage /> */}
-      {/* <Joblist /> */}
-      <JobDetail />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainPage />}></Route>
+          <Route path="/wdlist" element={<Joblist />}></Route>
+          {/* <JobDetail /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

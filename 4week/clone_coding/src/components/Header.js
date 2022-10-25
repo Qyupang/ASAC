@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/style.css';
 import LoginButton from './LoginButton';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -9,16 +10,16 @@ function Header() {
         <div className="left-side">
           <i className="fa-solid fa-bars cursor"></i>
           <h1 className="logo cursor">
-            <a href="index.html">wanted</a>
+            <Link to="/">wanted</Link>
           </h1>
         </div>
         <nav className="header-nav">
           <ul>
-            <li>
-              <span className="none">
-                <a href="recruit.html">채용</a>
-              </span>
-            </li>
+            <Link to="/wdlist">
+              <li>
+                <span className="none">채용</span>
+              </li>
+            </Link>
             <li>
               <span className="none">이벤트 </span>
             </li>
