@@ -5,7 +5,7 @@
 @import 'section_index.css';
 @import 'section_recruit.css';
 @import 'section_recruit_detail.css';
-
+@import '404.css';
 body {
   font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
     system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial,
@@ -36,7 +36,7 @@ main {
   margin: 0;
 }
 
-/* i {
+i {
   display: inline-block;
   font-family: 'Font Awesome 5 Free';
   font-weight: 800;
@@ -45,14 +45,6 @@ main {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-} */
-
-.spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .hidden {
