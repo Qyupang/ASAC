@@ -1,0 +1,24 @@
+{
+  "buttons": [
+    { "content": "리더십" },
+    { "content": "라이프스타일" },
+    { "content": "인간관계" },
+    { "content": "취업/이직" },
+    { "content": "회사생활" },
+    { "content": "IT/기술" },
+    { "content": "커리어고민" },
+    { "content": "조직문화" },
+    { "content": "개발" },
+    { "content": "데이터" },
+    { "content": "MD" },
+    { "content": "HR" },
+    { "content": "UX/UI" },
+    { "content": "노무" },
+    { "content": "디자인" },
+    { "content": "서비스기획" },
+    { "content": "브랜딩" },
+    { "content": "마케팅" },
+    { "content": "경영/전략" },
+    { "content": "콘텐츠 제작" }
+  ]
+}
