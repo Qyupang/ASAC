@@ -1,10 +1,10 @@
 import React from 'react';
-import SimpleSlider from './SimpleSlider';
+import IterationSample from './IterationSample';
 
 function App() {
   return (
     <div>
-      <SimpleSlider />
+      <IterationSample />
     </div>
   );
 }
