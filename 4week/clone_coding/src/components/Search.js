@@ -6,8 +6,9 @@ const Search = ({ setModalOpen }) => {
     setModalOpen(false);
   };
   return (
-    <div className="modal" onClick={closeModal}>
+    <div className="modal">
       <SearchModal />
+      <div className="modal-black" onClick={closeModal}></div>
     </div>
   );
 };

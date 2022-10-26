@@ -9,17 +9,14 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
     setRegisterModalOpen(false);
   };
 
-  const controllAll = () => {
-    if (checkAll) {
-      setCheckAll(false);
-      setFirstCheck(false);
-      setSecondCheck(false);
-    } else {
-      setCheckAll(true);
-      setFirstCheck(false);
-      setSecondCheck(false);
-    }
+  const onChange = (event) => {
+    setCheckAll(event.target.checked);
+    setFirstCheck(event.target.checked);
+    setSecondCheck(event.target.checked);
   };
+
+  const onChangeIndividual = (event) => {};
+
   return (
     <div className="register-modal">
       <div className="register-modal__header">
@@ -91,7 +88,7 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
                   name="agreeAll"
                   value="agree-all"
                   id="agree-all"
-                  onClick={controllAll}
+                  onChange={onChange}
                   checked={checkAll}
                 />
                 전체동의
@@ -104,6 +101,7 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
                     type="checkbox"
                     name="agreeFirst"
                     checked={firstCheck}
+                    // onChange={}
                   />{' '}
                   개인정보 수집 및 이용 동의 (필수)
                 </label>
