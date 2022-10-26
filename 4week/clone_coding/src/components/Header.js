@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/style.css';
 import LoginButton from './LoginButton';
 import { Link } from 'react-router-dom';
+import SearchButton from './SearchButton';
 
 function Header() {
   return (
@@ -41,13 +42,12 @@ function Header() {
           </ul>
         </nav>
         <div className="right-side">
-          <i className="fa-solid fa-magnifying-glass cursor"></i>
-          {/* <span className="cursor login-button">회원가입/로그인</span> */}
+          <SearchButton />
           <LoginButton />
           <span className="bar">|</span>
           <a
             href="https://www.wanted.co.kr/dashboard/welcome"
-            className="cursor"
+            className="cursor corporate-service"
           >
             기업 서비스
           </a>

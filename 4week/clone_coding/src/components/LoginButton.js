@@ -10,12 +10,12 @@ const LoginButton = () => {
   };
 
   return (
-    <div>
+    <>
       <span className="cursor login-button" onClick={showModal}>
         회원가입/로그인
       </span>
       {modalOpen && <LoginRegister setModalOpen={setModalOpen} />}
-    </div>
+    </>
   );
 };
 

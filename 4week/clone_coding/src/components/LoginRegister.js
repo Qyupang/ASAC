@@ -9,8 +9,11 @@ const LoginRegister = ({ setModalOpen }) => {
   const [loginModalOpen, setLoginModalopen] = useState(true);
   const [registerModalOpen, setRegisterModalOpen] = useState(false);
 
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
-    <div className="modal">
+    <div className="modal" onClick={closeModal}>
       {!registerModalOpen && (
         // 로그인 모달에서 이메일 버튼이 눌리면 로그인 모달을 끄고 회원가입 모달을 띄워줘야해서
         //setLoginModalopen과 setRegisterModalOpen를 props로 보내준다.

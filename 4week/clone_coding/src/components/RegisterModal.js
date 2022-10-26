@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const RegisterModal = ({ setRegisterModalOpen }) => {
+  const [checkAll, setCheckAll] = useState(false);
+  const [firstCheck, setFirstCheck] = useState(false);
+  const [secondCheck, setSecondCheck] = useState(false);
+
   const closeModal = () => {
     setRegisterModalOpen(false);
+  };
+
+  const controllAll = () => {
+    if (checkAll) {
+      setCheckAll(false);
+      setFirstCheck(false);
+      setSecondCheck(false);
+    } else {
+      setCheckAll(true);
+      setFirstCheck(false);
+      setSecondCheck(false);
+    }
   };
   return (
     <div className="register-modal">
@@ -75,6 +91,8 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
                   name="agreeAll"
                   value="agree-all"
                   id="agree-all"
+                  onClick={controllAll}
+                  checked={checkAll}
                 />
                 전체동의
               </label>
@@ -82,8 +100,12 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
             <div className="check-individual">
               <div className="essential">
                 <label>
-                  <input type="checkbox" name="agreeFirst" /> 개인정보 수집 및
-                  이용 동의 (필수)
+                  <input
+                    type="checkbox"
+                    name="agreeFirst"
+                    checked={firstCheck}
+                  />{' '}
+                  개인정보 수집 및 이용 동의 (필수)
                 </label>
                 <a href="https://help.wanted.co.kr/hc/ko/articles/360040127872">
                   자세히
@@ -91,8 +113,12 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
               </div>
               <div className="optional">
                 <label>
-                  <input type="checkbox" name="agreeSecond" /> 이벤트 소식 등
-                  알림 정보 받기
+                  <input
+                    type="checkbox"
+                    name="agreeSecond"
+                    checked={secondCheck}
+                  />{' '}
+                  이벤트 소식 등 알림 정보 받기
                 </label>
                 <a href="https://help.wanted.co.kr/hc/ko/articles/360040540111">
                   자세히

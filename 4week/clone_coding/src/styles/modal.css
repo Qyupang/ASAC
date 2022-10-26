@@ -438,3 +438,118 @@
   background-color: #fff;
   height: 50px;
 }
+
+/* search-modal */
+.search-modal {
+  /* width: 1512px; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.search-modal__header {
+  padding: 30px 0 0;
+}
+
+.search-modal__body {
+  padding: 50px 0 0;
+}
+
+.search-form {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+#search {
+  height: 50px;
+  line-height: 50px;
+  width: 962px;
+  padding: 0 36px 0 60px;
+  border: 1px solid #f2f4f7;
+  background-color: #f2f4f7;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #767676;
+  overflow: hiddden;
+  text-overflow: ellipsis;
+  display: content-box;
+}
+
+#search:focus {
+  background-color: #fff;
+}
+
+.search-modal__body-head {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.search-modal__recommand {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.company-tag__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #767676;
+}
+
+.company-tags {
+  width: 1060px;
+  padding: 20px 0 50px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.company-tag {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.company-tag__button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 25px;
+  padding: 0 26px;
+  border: none;
+  cursor: pointer;
+}
+
+.company-tag__button:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.company-tags .company-tag:nth-of-type(1) .company-tag__button {
+  background-color: #f0f8f8;
+}
+
+.company-tags .company-tag:nth-of-type(2) .company-tag__button {
+  background-color: #eeedf4;
+}
+
+.company-tags .company-tag:nth-of-type(3) .company-tag__button {
+  background-color: #e8edf3;
+}
+
+.company-tags .company-tag:nth-of-type(4) .company-tag__button {
+  background-color: #e9f4fb;
+}
+
+.company-tags .company-tag:nth-of-type(5) .company-tag__button {
+  background-color: #effbf3;
+}
