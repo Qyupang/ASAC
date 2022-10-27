@@ -10,12 +10,45 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
   };
 
   const onChange = (event) => {
+    console.log('event', event.target.checked);
     setCheckAll(event.target.checked);
     setFirstCheck(event.target.checked);
     setSecondCheck(event.target.checked);
+    console.log(firstCheck, secondCheck);
   };
 
-  const onChangeIndividual = (event) => {};
+  const onChangeIndividual = (event) => {
+    if (!event.target.checked) {
+      if (checkAll) {
+        setCheckAll(false);
+        if (event.target.name === 'agreeFirst') {
+          setFirstCheck(event.target.checked);
+        } else {
+          setSecondCheck(event.target.checked);
+        }
+      } else {
+        if (event.target.name === 'agreeFirst') {
+          setFirstCheck(event.target.checked);
+        } else {
+          setSecondCheck(event.target.checked);
+        }
+      }
+    } else {
+      if (event.target.name === 'agreeFirst') {
+        setFirstCheck(true);
+        if (secondCheck) {
+          setCheckAll(true);
+          console.log(firstCheck, secondCheck);
+        }
+      } else {
+        setSecondCheck(true);
+        if (firstCheck) {
+          setCheckAll(true);
+          console.log(firstCheck, secondCheck);
+        }
+      }
+    }
+  };
 
   return (
     <div className="register-modal">
@@ -101,7 +134,7 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
                     type="checkbox"
                     name="agreeFirst"
                     checked={firstCheck}
-                    // onChange={}
+                    onChange={onChangeIndividual}
                   />{' '}
                   개인정보 수집 및 이용 동의 (필수)
                 </label>
@@ -115,7 +148,8 @@ const RegisterModal = ({ setRegisterModalOpen }) => {
                     type="checkbox"
                     name="agreeSecond"
                     checked={secondCheck}
-                  />{' '}
+                    onChange={onChangeIndividual}
+                  />
                   이벤트 소식 등 알림 정보 받기
                 </label>
                 <a href="https://help.wanted.co.kr/hc/ko/articles/360040540111">

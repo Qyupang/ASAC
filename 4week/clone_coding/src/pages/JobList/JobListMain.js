@@ -1,10 +1,21 @@
 import React from 'react';
 import Recruit from './Recruit';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import JobDetail from '../JobDetail/JobDetail';
 import TopSectionCompany from './TopSectionCompany';
 import dummyForTopSection from '../../db/JobList/topSectionCompany.json';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
 const JobListMain = () => {
+  // const [pageId, setPageId] = useState(0);
+
+  // const handlePageId = (id) => {
+  //   setPageId(id);
+  //   <Link to="/wd/:id">
+  //     <JobDetail pageId={pageId} />
+  //   </Link>;
+  // };
   return (
     <main className="job-list__main">
       <section className="top-section">
@@ -34,6 +45,7 @@ const JobListMain = () => {
               responseRate={company.responseRate}
               location={company.responseRate}
               incentive={company.incentive}
+              // onClick={handlePageId(company.id)}
             />
           ))}
         </ul>
@@ -46,6 +58,7 @@ const JobListMain = () => {
               responseRate={company.responseRate}
               location={company.responseRate}
               incentive={company.incentive}
+              // onClick={handlePageId(company.id)}
             />
           ))}
         </ul>
@@ -58,6 +71,7 @@ const JobListMain = () => {
               responseRate={company.responseRate}
               location={company.responseRate}
               incentive={company.incentive}
+              // onClick={handlePageId(company.id)}
             />
           ))}
         </ul>
@@ -70,6 +84,7 @@ const JobListMain = () => {
               responseRate={company.responseRate}
               location={company.responseRate}
               incentive={company.incentive}
+              // onClick={handlePageId(company.id)}
             />
           ))}
         </ul>

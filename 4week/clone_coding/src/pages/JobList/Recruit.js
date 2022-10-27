@@ -10,15 +10,16 @@ const Recruit = ({
 }) => {
   return (
     <li className="recruitment">
-      <a href="./recruit_detail.html">
-        <img src={imgSrc} alt="" className="recruitment-image" />
-        <i className="fa-solid fa-bookmark bookmark-icon"></i>
-        <span className="recruitment-title">{recruitTitle}</span>
-        <span className="recruitment-company">{companyName}</span>
-        <div className="response-rate">{responseRate}</div>
-        <span className="location">{location}</span>
-        <span className="incentive">{incentive}</span>
-      </a>
+      <img src={imgSrc} alt="" className="recruitment-image" />
+      <i className="fa-solid fa-bookmark bookmark-icon"></i>
+      <span className="recruitment-title">{recruitTitle}</span>
+      <span className="recruitment-company">{companyName}</span>
+      <div className="response-rate">{responseRate}</div>
+      <span className="location">{location}</span>
+      <span className="incentive">
+        채용보상금 {incentive.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+        원
+      </span>
     </li>
   );
 };
