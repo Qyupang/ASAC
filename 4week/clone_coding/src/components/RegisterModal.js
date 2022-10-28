@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
-const RegisterModal = ({ setRegisterModalOpen }) => {
+const RegisterModal = ({ setModalOpen, setModalMode }) => {
   const [checkAll, setCheckAll] = useState(false);
   const [firstCheck, setFirstCheck] = useState(false);
   const [secondCheck, setSecondCheck] = useState(false);
 
   const closeModal = () => {
-    setRegisterModalOpen(false);
+    setModalOpen(false);
+    setModalMode(0);
   };
 
   const onChange = (event) => {

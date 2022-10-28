@@ -1,11 +1,12 @@
 import React from 'react';
 
-const LoginModal = ({ setLoginModalopen, setRegisterModalOpen }) => {
+const LoginModal = ({ setModalOpen, setModalMode }) => {
   const closeLoginModal = () => {
-    setLoginModalopen(false);
+    setModalOpen(false);
+    setModalMode(0);
   };
   const showRegisterModal = () => {
-    setRegisterModalOpen(true);
+    setModalMode(2);
   };
 
   return (
@@ -33,7 +34,6 @@ const LoginModal = ({ setLoginModalopen, setRegisterModalOpen }) => {
           <button
             className="login-modal__body-button-email"
             onClick={() => {
-              closeLoginModal();
               showRegisterModal();
             }}
           >
