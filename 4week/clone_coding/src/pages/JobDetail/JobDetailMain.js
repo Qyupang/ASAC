@@ -521,42 +521,7 @@ const JobDetailMain = () => {
                 responseRate={company.responseRate}
                 location={company.responseRate}
                 incentive={company.incentive}
-              />
-            ))}
-          </ul>
-          <ul className="recruitments">
-            {dummyForRecruitment.companies1.map((company) => (
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
-              />
-            ))}
-          </ul>
-          <ul className="recruitments">
-            {dummyForRecruitment.companies2.map((company) => (
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
-              />
-            ))}
-          </ul>
-          <ul className="recruitments">
-            {dummyForRecruitment.companies3.map((company) => (
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
+                key={company.id}
               />
             ))}
           </ul>

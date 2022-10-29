@@ -15,8 +15,8 @@ const CategoryButtonSlider = () => {
   };
   return (
     <Slider {...settings}>
-      {dummyForButton.contents.map((content) => (
-        <CategoryButton keyword={content.keyword} />
+      {dummyForButton.contents.map((content, idx) => (
+        <CategoryButton keyword={content.keyword} key={idx} />
       ))}
     </Slider>
   );

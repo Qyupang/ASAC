@@ -3,7 +3,7 @@ import Footer from '../../components/Footer';
 import JobDetailMain from './JobDetailMain';
 import '../../styles/style.css';
 
-const JobDetail = ({ PageId }) => {
+const JobDetail = () => {
   return (
     <div className="root">
       <JobDetailMain />

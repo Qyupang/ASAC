@@ -21,6 +21,7 @@ const JobListMain = () => {
               logoSrc={company.logoSrc}
               companyName={company.companyName}
               positionNum={company.positionNum}
+              key={company.id}
             />
           ))}
         </div>
@@ -28,7 +29,7 @@ const JobListMain = () => {
       <section className="recruitment-announcement">
         <ul className="recruitments">
           {dummyForRecruitment.companies.map((company) => (
-            <Link to={`/wd/${company.id}`}>
+            <Link to={`/wd/${company.id}`} key={company.id}>
               <Recruit
                 imgSrc={company.imgSrc}
                 recruitTitle={company.recruitTitle}
@@ -36,48 +37,7 @@ const JobListMain = () => {
                 responseRate={company.responseRate}
                 location={company.responseRate}
                 incentive={company.incentive}
-              />
-            </Link>
-          ))}
-        </ul>
-        <ul className="recruitments">
-          {dummyForRecruitment.companies1.map((company) => (
-            <Link to={`/wd/${company.id}`}>
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
-              />
-            </Link>
-          ))}
-        </ul>
-        <ul className="recruitments">
-          {dummyForRecruitment.companies2.map((company) => (
-            <Link to={`/wd/${company.id}`}>
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
-              />
-            </Link>
-          ))}
-        </ul>
-        <ul className="recruitments">
-          {dummyForRecruitment.companies3.map((company) => (
-            <Link to={`/wd/${company.id}`}>
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
+                key={company.id}
               />
             </Link>
           ))}

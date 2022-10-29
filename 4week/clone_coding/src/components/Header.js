@@ -3,13 +3,14 @@ import '../styles/style.css';
 import LoginButton from './LoginButton';
 import { Link } from 'react-router-dom';
 import SearchButton from './SearchButton';
+import Hamburger from './Hamburger';
 
 function Header() {
   return (
     <header>
       <div className="header">
         <div className="left-side">
-          <i className="fa-solid fa-bars cursor"></i>
+          <Hamburger />
           <h1 className="logo cursor">
             <Link to="/">wanted</Link>
           </h1>

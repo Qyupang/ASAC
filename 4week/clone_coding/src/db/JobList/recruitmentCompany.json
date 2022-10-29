@@ -35,9 +35,7 @@
       "location": "서울·한국",
       "incentive": 1000000,
       "id": 4
-    }
-  ],
-  "companies1": [
+    },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22152%2Fzfcvnwqkqwrddima__400_400.png&w=400&q=75",
       "recruitTitle": "머신러닝 엔지니어",
@@ -47,7 +45,6 @@
       "incentive": 1000000,
       "id": 5
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31829%2Fjnpo0nc96whq3m5x__400_400.jpg&w=400&q=75",
       "recruitTitle": "F/W 개발 엔지니어 (for RADAR system)",
@@ -57,7 +54,6 @@
       "incentive": 1000000,
       "id": 6
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31829%2Fjnpo0nc96whq3m5x__400_400.jpg&w=400&q=75",
       "recruitTitle": "RADAR 알고리즘 개발 엔지니어",
@@ -67,7 +63,6 @@
       "incentive": 1000000,
       "id": 7
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F18482%2Fk3wjsyzzomlui7yq__400_400.jpg&w=400&q=75",
       "recruitTitle": "iOS 앱 개발자",
@@ -76,9 +71,7 @@
       "location": "서울·한국",
       "incentive": 1000000,
       "id": 8
-    }
-  ],
-  "companies2": [
+    },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F18482%2Fk3wjsyzzomlui7yq__400_400.jpg&w=400&q=75",
       "recruitTitle": "로봇 응용 S/W 엔지니어 (선임-책임급)",
@@ -88,7 +81,6 @@
       "incentive": 1000000,
       "id": 9
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34549%2Fpgg6syhaiistu9ws__400_400.jpg&w=400&q=75",
       "recruitTitle": "로봇 응용 S/W FAE (Field Application Engineer)",
@@ -98,7 +90,6 @@
       "incentive": 1000000,
       "id": 10
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34549%2Fpgg6syhaiistu9ws__400_400.jpg&w=400&q=75",
       "recruitTitle": "로봇 응용 S/W 엔지니어 (선임-책임급)",
@@ -108,7 +99,6 @@
       "incentive": 1000000,
       "id": 11
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34549%2Fpgg6syhaiistu9ws__400_400.jpg&w=400&q=75",
       "recruitTitle": "로봇 응용 S/W 엔지니어 (책임-수석급)",
@@ -117,9 +107,7 @@
       "location": "서울·한국",
       "incentive": 1000000,
       "id": 12
-    }
-  ],
-  "companies3": [
+    },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75",
       "recruitTitle": "iOS 개발자",
@@ -129,7 +117,6 @@
       "incentive": 1000000,
       "id": 13
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75",
       "recruitTitle": "개발PM",
@@ -139,7 +126,6 @@
       "incentive": 1000000,
       "id": 14
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75",
       "recruitTitle": "Android/iOS APP 운영 개발자",
@@ -149,7 +135,6 @@
       "incentive": 1000000,
       "id": 15
     },
-
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F23336%2Ft28za5k3wbbm52oc__400_400.jpeg&w=400&q=75",
       "recruitTitle": "Mobile Application 개발(Robot Software Engineer)",

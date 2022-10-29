@@ -4,31 +4,36 @@
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F216%2Fpdgjch6eg5ajfdfm__400_400.jpg&w=400&q=75",
       "logoSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.799382a7.jpg&w=100&q=75",
       "companyName": "화해(버드뷰)",
-      "positionNum": "16개 포지션"
+      "positionNum": "16개 포지션",
+      "id": 1
     },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1355%2F16906_2_0.__400_400.jpg&w=400&q=75",
       "logoSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5_01c06ee3-c3ec-4c81-8f3f-ab7418f1d75a.jpg&w=100&q=75",
       "companyName": "탭조이코리아(Tapjoy)",
-      "positionNum": "8개 포지션"
+      "positionNum": "8개 포지션",
+      "id": 2
     },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F805%2Fqmeqtcb0lrqseulw__400_400.png&w=400&q=75",
       "logoSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e2774c2c.jpg&w=100&q=75",
       "companyName": "해줌",
-      "positionNum": "5개 포지션"
+      "positionNum": "5개 포지션",
+      "id": 3
     },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35903%2Fxbk7aqiygykq2crq__400_400.jpg&w=400&q=75",
       "logoSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.5654364d.jpg&w=100&q=75",
       "companyName": "롱기스트",
-      "positionNum": "3개 포지션"
+      "positionNum": "3개 포지션",
+      "id": 4
     },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F7111%2Fydhlckrrli3dyd3i__400_400.jpg&w=400&q=75",
       "logoSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.e2e8ebd6.jpg&w=100&q=75",
       "companyName": "세컨신드롬",
-      "positionNum": "18개 포지션"
+      "positionNum": "18개 포지션",
+      "id": 5
     }
   ]
 }
