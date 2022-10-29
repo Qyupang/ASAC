@@ -6,12 +6,10 @@ import '../../styles/style.css';
 
 const JobList = () => {
   return (
-    // <div className="root">
     <>
       <JobListCategory />
       <JobListMain />
     </>
-    // </div>
   );
 };
 

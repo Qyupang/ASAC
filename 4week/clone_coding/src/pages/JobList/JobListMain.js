@@ -1,21 +1,11 @@
 import React from 'react';
-import Recruit from './Recruit';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import JobDetail from '../JobDetail/JobDetail';
+import Recruit from './Recruit';
 import TopSectionCompany from './TopSectionCompany';
 import dummyForTopSection from '../../db/JobList/topSectionCompany.json';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
 const JobListMain = () => {
-  // const [pageId, setPageId] = useState(0);
-
-  // const handlePageId = (id) => {
-  //   setPageId(id);
-  //   <Link to="/wd/:id">
-  //     <JobDetail pageId={pageId} />
-  //   </Link>;
-  // };
   return (
     <main className="job-list__main">
       <section className="top-section">
@@ -38,54 +28,58 @@ const JobListMain = () => {
       <section className="recruitment-announcement">
         <ul className="recruitments">
           {dummyForRecruitment.companies.map((company) => (
-            <Recruit
-              imgSrc={company.imgSrc}
-              recruitTitle={company.recruitTitle}
-              companyName={company.companyName}
-              responseRate={company.responseRate}
-              location={company.responseRate}
-              incentive={company.incentive}
-              // onClick={handlePageId(company.id)}
-            />
+            <Link to={`/wd/${company.id}`}>
+              <Recruit
+                imgSrc={company.imgSrc}
+                recruitTitle={company.recruitTitle}
+                companyName={company.companyName}
+                responseRate={company.responseRate}
+                location={company.responseRate}
+                incentive={company.incentive}
+              />
+            </Link>
           ))}
         </ul>
         <ul className="recruitments">
           {dummyForRecruitment.companies1.map((company) => (
-            <Recruit
-              imgSrc={company.imgSrc}
-              recruitTitle={company.recruitTitle}
-              companyName={company.companyName}
-              responseRate={company.responseRate}
-              location={company.responseRate}
-              incentive={company.incentive}
-              // onClick={handlePageId(company.id)}
-            />
+            <Link to={`/wd/${company.id}`}>
+              <Recruit
+                imgSrc={company.imgSrc}
+                recruitTitle={company.recruitTitle}
+                companyName={company.companyName}
+                responseRate={company.responseRate}
+                location={company.responseRate}
+                incentive={company.incentive}
+              />
+            </Link>
           ))}
         </ul>
         <ul className="recruitments">
           {dummyForRecruitment.companies2.map((company) => (
-            <Recruit
-              imgSrc={company.imgSrc}
-              recruitTitle={company.recruitTitle}
-              companyName={company.companyName}
-              responseRate={company.responseRate}
-              location={company.responseRate}
-              incentive={company.incentive}
-              // onClick={handlePageId(company.id)}
-            />
+            <Link to={`/wd/${company.id}`}>
+              <Recruit
+                imgSrc={company.imgSrc}
+                recruitTitle={company.recruitTitle}
+                companyName={company.companyName}
+                responseRate={company.responseRate}
+                location={company.responseRate}
+                incentive={company.incentive}
+              />
+            </Link>
           ))}
         </ul>
         <ul className="recruitments">
           {dummyForRecruitment.companies3.map((company) => (
-            <Recruit
-              imgSrc={company.imgSrc}
-              recruitTitle={company.recruitTitle}
-              companyName={company.companyName}
-              responseRate={company.responseRate}
-              location={company.responseRate}
-              incentive={company.incentive}
-              // onClick={handlePageId(company.id)}
-            />
+            <Link to={`/wd/${company.id}`}>
+              <Recruit
+                imgSrc={company.imgSrc}
+                recruitTitle={company.recruitTitle}
+                companyName={company.companyName}
+                responseRate={company.responseRate}
+                location={company.responseRate}
+                incentive={company.incentive}
+              />
+            </Link>
           ))}
         </ul>
       </section>
