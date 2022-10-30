@@ -10,6 +10,7 @@ const SearchModal = () => {
               type="text"
               id="search"
               placeholder="#태그, 회사, 포지션 검색"
+              autoComplete="off"
             ></input>
           </form>
         </div>

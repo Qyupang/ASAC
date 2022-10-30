@@ -6,6 +6,8 @@
 @import 'section_recruit.css';
 @import 'section_recruit_detail.css';
 @import '404.css';
+@import 'hamburger.css';
+
 body {
   font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
     system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial,
