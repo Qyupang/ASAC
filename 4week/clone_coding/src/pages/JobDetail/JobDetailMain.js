@@ -5,6 +5,7 @@ import JobDetailTag from './JobDetailTag';
 import JobDetailTechStack from './JobDetailTechStack';
 import Recruit from '../JobList/Recruit';
 import JobDetailSlider from './JobDetailSlider';
+import KakaoMap from './KakaoMap';
 import '../../asset/img/map.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
@@ -418,13 +419,14 @@ const JobDetailMain = () => {
                 서울 용산구 한강대로 366 트윈시티 남산 2 패스트파이브
               </div>
             </div>
-            <a href="https://map.naver.com/v5/?c=14134443.6017751,4516207.4207668,17,0,0,0,dh&lng=126.9729133&lat=37.5511247&type=0&title=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20366%20%ED%8A%B8%EC%9C%88%EC%8B%9C%ED%8B%B0%20%EB%82%A8%EC%82%B0">
+            {/* <a href="https://map.naver.com/v5/?c=14134443.6017751,4516207.4207668,17,0,0,0,dh&lng=126.9729133&lat=37.5511247&type=0&title=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20366%20%ED%8A%B8%EC%9C%88%EC%8B%9C%ED%8B%B0%20%EB%82%A8%EC%82%B0">
               <img
                 src="https://github.com/Qyupang/ASAC/blob/main/2week/clone_coding/img/map.png?raw=true"
                 alt=""
                 className="job-detail__anouncement-location-image"
               />
-            </a>
+            </a> */}
+            <KakaoMap />
           </section>
           <section className="job-detail__company">
             <div className="job-detail__company__botton-left">

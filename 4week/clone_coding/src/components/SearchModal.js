@@ -1,6 +1,14 @@
-import React from 'react';
+import { React, useState } from 'react';
 
-const SearchModal = () => {
+const SearchModal = ({ setSearchTerm, setSearched }) => {
+  const searchTarget = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const isSearched = () => {
+    setSearched(true);
+  };
+
   return (
     <>
       <div className="search-modal">
@@ -11,6 +19,10 @@ const SearchModal = () => {
               id="search"
               placeholder="#태그, 회사, 포지션 검색"
               autoComplete="off"
+              onChange={() => {
+                searchTarget();
+                isSearched();
+              }}
             ></input>
           </form>
         </div>

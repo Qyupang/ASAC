@@ -5,7 +5,7 @@ import TopSectionCompany from './TopSectionCompany';
 import dummyForTopSection from '../../db/JobList/topSectionCompany.json';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
-const JobListMain = () => {
+const JobListMain = ({ searchTerm, searched }) => {
   return (
     <main className="job-list__main">
       <section className="top-section">
@@ -28,19 +28,33 @@ const JobListMain = () => {
       </section>
       <section className="recruitment-announcement">
         <ul className="recruitments">
-          {dummyForRecruitment.companies.map((company) => (
-            <Link to={`/wd/${company.id}`} key={company.id}>
-              <Recruit
-                imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
-                companyName={company.companyName}
-                responseRate={company.responseRate}
-                location={company.responseRate}
-                incentive={company.incentive}
-                key={company.id}
-              />
-            </Link>
-          ))}
+          {!searched
+            ? dummyForRecruitment.companies.map((company) => (
+                <Link to={`/wd/${company.id}`} key={company.id}>
+                  <Recruit
+                    imgSrc={company.imgSrc}
+                    recruitTitle={company.recruitTitle}
+                    companyName={company.companyName}
+                    responseRate={company.responseRate}
+                    location={company.responseRate}
+                    incentive={company.incentive}
+                    key={company.id}
+                  />
+                </Link>
+              ))
+            : dummyForRecruitment.companies.map((company) => (
+                <Link to={`/wd/${company.id}`} key={company.id}>
+                  <Recruit
+                    // imgSrc={company.imgSrc}
+                    recruitTitle={company.recruitTitle}
+                    companyName={company.companyName}
+                    responseRate={company.responseRate}
+                    location={company.responseRate}
+                    incentive={company.incentive}
+                    key={company.id}
+                  />
+                </Link>
+              ))}
         </ul>
       </section>
     </main>

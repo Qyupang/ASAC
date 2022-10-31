@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Search from './Search';
 
-const SearchButton = () => {
+const SearchButton = ({ setSearched, setSearchTerm }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const showModal = () => {
@@ -14,7 +14,13 @@ const SearchButton = () => {
         className="fa-solid fa-magnifying-glass cursor"
         onClick={showModal}
       ></i>
-      {modalOpen && <Search setModalOpen={setModalOpen} />}
+      {modalOpen && (
+        <Search
+          setModalOpen={setModalOpen}
+          setSearchTerm={setSearchTerm}
+          setSearched={setSearched}
+        />
+      )}
     </>
   );
 };
