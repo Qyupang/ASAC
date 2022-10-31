@@ -23,7 +23,7 @@ const PageA = () => {
       <div>PageA</div>
       <Link to="/">Page B로 이동</Link>
       {names.map((user, idx) => (
-        <NameView key={user.id} name={user.name} url={`/${user.id}`>} />
+        <NameView key={user.id} name={user.name} url={`/${user.id}`} />
       ))}
       <div onClick={gotoPageC}>Page C로 이동</div>
     </div>
