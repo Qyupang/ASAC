@@ -9,6 +9,7 @@ import KakaoMap from './KakaoMap';
 import '../../asset/img/map.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
 const JobDetailMain = () => {
