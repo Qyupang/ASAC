@@ -636,6 +636,7 @@ h6 {
   border-top: 1px solid #ececec;
   width: 700px;
   height: 164px;
+  margin-bottom: 100px;
 }
 
 .job-detail__warning-bottom p {
@@ -644,7 +645,3 @@ h6 {
   padding: 13px 30px 30px;
   color: #666;
 }
-
-/* .slick-dots {
-  width: 700px;
-} */

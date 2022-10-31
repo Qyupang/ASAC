@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/style.css';
 import '../../styles/section_recruit_detail.css';
 import JobDetailTag from './JobDetailTag';
@@ -6,6 +6,7 @@ import JobDetailTechStack from './JobDetailTechStack';
 import Recruit from '../JobList/Recruit';
 import JobDetailSlider from './JobDetailSlider';
 import KakaoMap from './KakaoMap';
+import HiddenDescript from './HiddenDescript';
 import '../../asset/img/map.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +14,15 @@ import { Link } from 'react-router-dom';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
 const JobDetailMain = () => {
+  const [hidden, setHidden] = useState(true);
+
+  const toggleHidden = () => {
+    if (hidden) {
+      setHidden(false);
+    } else {
+      setHidden(true);
+    }
+  };
   return (
     <main className="main">
       <section className="job-detail">
@@ -450,10 +460,14 @@ const JobDetailMain = () => {
                   수 없으며, 구직활동 이외의 <br />
                   용도로 사용할 수 없습니다.
                 </span>
-                <i className="fa-solid fa-chevron-down"></i>
+                <i
+                  className="fa-solid fa-chevron-down"
+                  onClick={toggleHidden}
+                ></i>
               </div>
             </div>
-            <div className="job-detail__warning-bottom detail-hidden">
+            {!hidden && <HiddenDescript />}
+            {/* <div className="job-detail__warning-bottom detail-hidden">
               <p>
                 본 채용 정보는 블루비커에서 제공한 자료를 바탕으로 원티드랩에서
                 표현을 수정하고 이의 배열 및 구<br />
@@ -470,7 +484,7 @@ const JobDetailMain = () => {
                 <br />
                 원티드랩. 무단전재-재배포금지&gt;
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="sticky-reward">

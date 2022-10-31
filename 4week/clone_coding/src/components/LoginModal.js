@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import WarningMessage from './WarningMessage';
 
 const LoginModal = ({ setModalOpen, setModalMode }) => {
   const closeLoginModal = () => {
@@ -7,6 +8,22 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
   };
   const showRegisterModal = () => {
     setModalMode(2);
+  };
+
+  const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(false);
+
+  const emailCheck = (e) => {
+    const regex =
+      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+    if (e.target.value) {
+      if (!regex.test(e.target.value)) {
+        setIsValidEmail(true);
+        setEmail(e.target.value);
+      } else {
+        setIsValidEmail(false);
+      }
+    }
   };
 
   return (
@@ -28,8 +45,14 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
         </div>
         <form action="" className="email-form">
           <label for="email">이메일</label>
-          <input type="email" id="email" placeholder="이메일을 입력해주세요." />
+          <input
+            type="email"
+            id="email"
+            placeholder="이메일을 입력해주세요."
+            onChange={emailCheck}
+          />
         </form>
+        {isValidEmail && <WarningMessage />}
         <div className="login-modal__body-buttons">
           <button
             className="login-modal__body-button-email"
