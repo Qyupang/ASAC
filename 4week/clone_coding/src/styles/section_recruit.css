@@ -153,14 +153,6 @@ select {
   padding: 7px 14px;
 }
 
-/* .category-buttons:nth-child(2n) {
-  background-color: #f2fbf5;
-}
-
-.category-buttons:nth-child(5n) {
-  background-color: #f7f2f9;
-} */
-
 .job-list__main {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

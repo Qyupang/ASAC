@@ -18,6 +18,11 @@
   width: 1060px;
 }
 
+.more-positions__hidden {
+  margin-top: 140px;
+  width: 1060px;
+}
+
 .recruitment-announcement {
   display: flex;
   flex-direction: column;

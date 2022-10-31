@@ -82,7 +82,9 @@ const RegisterModal = ({ setModalOpen, setModalMode }) => {
                 id="phone-number"
                 placeholder="(예시)01034567890"
               />
-              <button className="authentication-button">인증번호 받기</button>
+              <button className="authentication-button" disabled={true}>
+                인증번호 받기
+              </button>
               <input
                 type="text"
                 id="authentication"

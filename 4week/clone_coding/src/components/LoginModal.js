@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import WarningMessage from './WarningMessage';
 
 const LoginModal = ({ setModalOpen, setModalMode }) => {
+  const [newClassName, setNewClassName] = useState('');
+
   const closeLoginModal = () => {
     setModalOpen(false);
     setModalMode(0);
@@ -11,17 +13,19 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
   };
 
   const [email, setEmail] = useState('');
-  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(true);
 
   const emailCheck = (e) => {
     const regex =
       /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
     if (e.target.value) {
       if (!regex.test(e.target.value)) {
+        setIsValidEmail(false);
+        setNewClassName('newClassName');
+      } else {
         setIsValidEmail(true);
         setEmail(e.target.value);
-      } else {
-        setIsValidEmail(false);
+        setNewClassName('');
       }
     }
   };
@@ -44,18 +48,22 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
           </h2>
         </div>
         <form action="" className="email-form">
-          <label for="email">이메일</label>
+          <label for="email" className="label-for-email">
+            이메일
+          </label>
           <input
             type="email"
             id="email"
             placeholder="이메일을 입력해주세요."
             onChange={emailCheck}
+            className={newClassName}
           />
+          {!isValidEmail && <WarningMessage />}
         </form>
-        {isValidEmail && <WarningMessage />}
         <div className="login-modal__body-buttons">
           <button
             className="login-modal__body-button-email"
+            disabled={!isValidEmail}
             onClick={() => {
               showRegisterModal();
             }}

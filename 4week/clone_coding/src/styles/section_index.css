@@ -538,23 +538,7 @@ section .title {
   margin-top: 10px;
 }
 
-.slick-prev {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 30px;
-  height: 60px;
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255, 0.5) !important;
-  font-size: 16px;
-  cursor: pointer;
-  bottom: 0px;
-  left: 120px;
-  /* z-index: 100; */
-}
-
-.slick-prev::before {
+/* .slick-prev::before {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -567,23 +551,6 @@ section .title {
   cursor: pointer;
   bottom: 0px;
   left: 120px;
-  /* z-index: 100; */
-}
-
-.slick-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 30px;
-  height: 60px;
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255, 0.7) !important;
-  font-size: 16px;
-  cursor: pointer;
-  bottom: 0px;
-  right: 120px;
-  /* z-index: 100; */
 }
 
 .slick-next::before {
@@ -599,8 +566,7 @@ section .title {
   cursor: pointer;
   bottom: 0px;
   right: 120px;
-  /* z-index: 100; */
-}
+} */
 
 @keyframes fadein {
   0% {

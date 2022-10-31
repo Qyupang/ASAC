@@ -68,6 +68,14 @@
   background-color: #fff;
   font-size: 15px;
   color: #333;
+  margin: 0 0 8px;
+}
+
+.label-for-email {
+  margin: 0 0 7px;
+  color: #888888;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .login-modal__body-button-email {
@@ -565,4 +573,14 @@
 
 .company-tags .company-tag:nth-of-type(5) .company-tag__button {
   background-color: #effbf3;
+}
+
+.email-warning__message {
+  color: #f1415c;
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.newClassName:focus {
+  outline: 2px solid red;
 }
