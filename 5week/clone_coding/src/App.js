@@ -3,12 +3,15 @@ import Joblist from './pages/JobList/JobList';
 import JobDetail from './pages/JobDetail/JobDetail';
 import NotFound from './pages/NotFound/NotFound';
 import Header from './components/Header';
+import ScrollToTop from './ScrollToTop';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="root">
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
