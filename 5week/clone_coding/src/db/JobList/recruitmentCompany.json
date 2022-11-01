@@ -1,0 +1,174 @@
+{
+  "companies": [
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2Feh1mycy7nnltf5ah__1080_790.jpg&w=1000&q=75",
+      "recruitTitle": "웹 프론트엔드 개발자(React)",
+      "companyName": "블루비커",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 1,
+      "tags": [
+        "#인원급성장",
+        "#50명이하",
+        "#설립3년이하",
+        "#스톡옵션",
+        "#스타트업",
+        "#워크샵",
+        "#간식",
+        "#건강검진",
+        "#IT, 컨텐츠"
+      ],
+      "techStack": [
+        "Git",
+        "Azure",
+        "React",
+        "Javascript",
+        "TypeScript",
+        "Redux",
+        "Next.js"
+      ],
+      "detailLocation": "서울 용산구 한강대로 366 트윈시티 남산 2 패스트파이브",
+      "dueDate": "상시",
+      "lat": 37.5505712,
+      "lng": 126.972577051,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.0852ff23.jpg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F24827%2Fsfygensszfn8g8gt__400_400.jpg&w=400&q=75",
+      "recruitTitle": "iOS 개발자 (iOS Developer)",
+      "companyName": "다큐브(daquv)",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 2
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F35490%2Fri4mmve51yszgclk__400_400.jpg&w=400&q=75",
+      "recruitTitle": "자바 개발 팀장",
+      "companyName": "시큐어레터",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 3
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F33258%2F2ndaiiurzpxktqnd__400_400.jpg&w=400&q=75",
+      "recruitTitle": "ASP.NET Core 백엔드 개발자 ",
+      "companyName": "클라우드호스피탈",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 4
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22152%2Fzfcvnwqkqwrddima__400_400.png&w=400&q=75",
+      "recruitTitle": "머신러닝 엔지니어",
+      "companyName": "비팩토리(B Factory)",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 5
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31829%2Fjnpo0nc96whq3m5x__400_400.jpg&w=400&q=75",
+      "recruitTitle": "F/W 개발 엔지니어 (for RADAR system)",
+      "companyName": "모본",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 6
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31829%2Fjnpo0nc96whq3m5x__400_400.jpg&w=400&q=75",
+      "recruitTitle": "RADAR 알고리즘 개발 엔지니어",
+      "companyName": "모본",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 7
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F18482%2Fk3wjsyzzomlui7yq__400_400.jpg&w=400&q=75",
+      "recruitTitle": "iOS 앱 개발자",
+      "companyName": "딥파인",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 8
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F18482%2Fk3wjsyzzomlui7yq__400_400.jpg&w=400&q=75",
+      "recruitTitle": "로봇 응용 S/W 엔지니어 (선임-책임급)",
+      "companyName": "로아스",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 9
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34549%2Fpgg6syhaiistu9ws__400_400.jpg&w=400&q=75",
+      "recruitTitle": "로봇 응용 S/W FAE (Field Application Engineer)",
+      "companyName": "로아스",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 10
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34549%2Fpgg6syhaiistu9ws__400_400.jpg&w=400&q=75",
+      "recruitTitle": "로봇 응용 S/W 엔지니어 (선임-책임급)",
+      "companyName": "로아스",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 11
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34549%2Fpgg6syhaiistu9ws__400_400.jpg&w=400&q=75",
+      "recruitTitle": "로봇 응용 S/W 엔지니어 (책임-수석급)",
+      "companyName": "로아스",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 12
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75",
+      "recruitTitle": "iOS 개발자",
+      "companyName": "서밋코퍼레이션",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 13
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75",
+      "recruitTitle": "개발PM",
+      "companyName": "서밋코퍼레이션",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 14
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5821%2Fe162mnkzotucvaju__400_400.jpg&w=400&q=75",
+      "recruitTitle": "Android/iOS APP 운영 개발자",
+      "companyName": "서밋코퍼레이션",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 15
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F23336%2Ft28za5k3wbbm52oc__400_400.jpeg&w=400&q=75",
+      "recruitTitle": "Mobile Application 개발(Robot Software Engineer)",
+      "companyName": "플라잎",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 16
+    }
+  ]
+}
