@@ -18,11 +18,6 @@
   width: 1060px;
 }
 
-.more-positions__hidden {
-  margin-top: 140px;
-  width: 1060px;
-}
-
 .recruitment-announcement {
   display: flex;
   flex-direction: column;
@@ -143,6 +138,15 @@
 .job-detail {
   width: 1060px;
   height: 6379px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 80px;
+  margin-top: 50px;
+}
+
+.job-detail__hidden {
+  width: 1060px;
+  height: 6590px;
   display: flex;
   justify-content: space-between;
   padding: 20px 0px 80px;
@@ -554,7 +558,6 @@ h6 {
 }
 
 .job-detail__company-image {
-  background-image: url('https://static.wanted.co.kr/images/wdes/0_5.0852ff23.jpg');
   width: 50px;
   height: 50px;
   background-size: contain;
@@ -649,4 +652,9 @@ h6 {
   line-height: 24px;
   padding: 13px 30px 30px;
   color: #666;
+}
+
+.strong {
+  font-weight: 800;
+  font-size: 13px;
 }

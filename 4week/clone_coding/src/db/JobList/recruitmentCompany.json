@@ -7,7 +7,33 @@
       "responseRate": "응답률 매우 높음",
       "location": "서울·한국",
       "incentive": 1000000,
-      "id": 1
+      "id": 1,
+      "tags": [
+        "#인원급성장",
+        "#50명이하",
+        "#설립3년이하",
+        "#스톡옵션",
+        "#스타트업",
+        "#워크샵",
+        "#간식",
+        "#건강검진",
+        "#IT, 컨텐츠"
+      ],
+      "techStack": [
+        "Git",
+        "Azure",
+        "React",
+        "Javascript",
+        "TypeScript",
+        "Redux",
+        "Next.js"
+      ],
+      "detailLocation": "서울 용산구 한강대로 366 트윈시티 남산 2 패스트파이브",
+      "dueDate": "상시",
+      "lat": 37.5505712,
+      "lng": 126.972577051,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.0852ff23.jpg"
     },
     {
       "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F24827%2Fsfygensszfn8g8gt__400_400.jpg&w=400&q=75",

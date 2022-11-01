@@ -1,13 +1,13 @@
 import React from 'react';
 import SearchModal from './SearchModal';
 
-const Search = ({ setModalOpen, setSearched, setSearchTerm }) => {
+const Search = ({ setModalOpen }) => {
   const closeModal = () => {
     setModalOpen(false);
   };
   return (
     <div className="modal">
-      <SearchModal setSearchTerm={setSearchTerm} setSearched={setSearched} />
+      <SearchModal />
       <div className="modal-black" onClick={closeModal}></div>
     </div>
   );

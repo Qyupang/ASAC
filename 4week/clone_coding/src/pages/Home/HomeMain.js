@@ -23,6 +23,7 @@ const Section = () => {
       <section className="career-insight">
         <span className="title">
           나에게 필요한 커리어 인사이트
+          <span> </span>
           <i className="fa-regular fa-circle-question"></i>
         </span>
         <div className="career-insight__buttons">

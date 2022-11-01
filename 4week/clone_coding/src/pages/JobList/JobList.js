@@ -3,11 +3,11 @@ import JobListMain from './JobListMain';
 import JobListCategory from './JobListCategory';
 import '../../styles/style.css';
 
-const JobList = ({ searchTerm, searched }) => {
+const JobList = () => {
   return (
     <>
       <JobListCategory />
-      <JobListMain searchTerm={searchTerm} searched={searched} />
+      <JobListMain />
     </>
   );
 };

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SearchButton from './SearchButton';
 import Hamburger from './Hamburger';
 
-function Header({ setSearchTerm, setSearched }) {
+function Header() {
   return (
     <header>
       <div className="header">
@@ -43,10 +43,7 @@ function Header({ setSearchTerm, setSearched }) {
           </ul>
         </nav>
         <div className="right-side">
-          <SearchButton
-            setSearchTerm={setSearchTerm}
-            setSearched={setSearched}
-          />
+          <SearchButton />
           <LoginButton />
           <span className="bar">|</span>
           <a

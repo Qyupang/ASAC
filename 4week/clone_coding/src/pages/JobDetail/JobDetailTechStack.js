@@ -1,7 +1,7 @@
 import React from 'react';
 
-const JobDetailTechStack = ({ tech }) => {
-  return <div className="job-detail__tech-stack">{tech}</div>;
+const JobDetailTechStack = ({ stack }) => {
+  return <div className="job-detail__tech-stack">{stack}</div>;
 };
 
 export default JobDetailTechStack;
