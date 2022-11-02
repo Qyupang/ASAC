@@ -63,7 +63,7 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
         <div className="login-modal__body-buttons">
           <button
             className="login-modal__body-button-email"
-            disabled={!isValidEmail}
+            disabled={!isValidEmail || !email}
             onClick={() => {
               showRegisterModal();
             }}
