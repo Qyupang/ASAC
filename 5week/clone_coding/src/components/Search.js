@@ -7,7 +7,7 @@ const Search = ({ setModalOpen }) => {
   };
   return (
     <div className="modal">
-      <SearchModal />
+      <SearchModal setModalOpen={setModalOpen} />
       <div className="modal-black" onClick={closeModal}></div>
     </div>
   );

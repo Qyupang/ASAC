@@ -1,6 +1,40 @@
-import { React } from 'react';
+import { React, useState } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import dummyForRecruitment from '../db/JobList/recruitmentCompany.json';
 
-const SearchModal = () => {
+const SearchModal = ({ setModalOpen }) => {
+  const navigate = useNavigate();
+
+  let [query, setQuery] = useSearchParams();
+  const [inputQuery, setInputQuery] = useState('');
+  const [inputs, setInputs] = useState('');
+
+  const handelOnChange = (e) => {
+    setInputs(e.target.value);
+  };
+
+  const handleResult = (keyword) => {
+    const companies = dummyForRecruitment.companies.filter(
+      (company) => company.companyName === keyword
+    );
+    console.log(companies);
+  };
+
+  const handleEnter = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (inputs === '') {
+        alert('❗️검색어를 입력하세요');
+      } else {
+        setInputQuery(inputs);
+        console.log(inputs);
+        handleResult(inputs);
+        setModalOpen(false);
+        navigate(`/search?query=${inputs}`);
+      }
+    }
+  };
+
   return (
     <>
       <div className="search-modal">
@@ -11,6 +45,8 @@ const SearchModal = () => {
               id="search"
               placeholder="#태그, 회사, 포지션 검색"
               autoComplete="off"
+              onKeyPress={handleEnter}
+              onChange={handelOnChange}
             ></input>
           </form>
         </div>
