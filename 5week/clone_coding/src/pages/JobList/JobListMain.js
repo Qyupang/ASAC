@@ -32,7 +32,7 @@ const JobListMain = () => {
             <Link to={`/wd/${company.id}`} key={company.id}>
               <Recruit
                 imgSrc={company.imgSrc}
-                recruitTitle={company.recruitTitle}
+                position={company.position}
                 companyName={company.companyName}
                 responseRate={company.responseRate}
                 location={company.responseRate}

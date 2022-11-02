@@ -28,9 +28,10 @@
 
 .recruitments {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 30px;
+  gap: 20px;
 }
 
 .recruitments:first-child {

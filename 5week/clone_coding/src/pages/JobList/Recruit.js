@@ -2,7 +2,7 @@ import React from 'react';
 
 const Recruit = ({
   imgSrc,
-  recruitTitle,
+  position,
   companyName,
   responseRate,
   location,
@@ -12,7 +12,7 @@ const Recruit = ({
     <li className="recruitment">
       <img src={imgSrc} alt="" className="recruitment-image" />
       <i className="fa-solid fa-bookmark bookmark-icon"></i>
-      <span className="recruitment-title">{recruitTitle}</span>
+      <span className="recruitment-title">{position}</span>
       <span className="recruitment-company">{companyName}</span>
       <div className="response-rate">{responseRate}</div>
       <span className="location">{location}</span>

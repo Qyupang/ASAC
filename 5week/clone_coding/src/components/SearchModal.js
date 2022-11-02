@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import dummyForRecruitment from '../db/JobList/recruitmentCompany.json';
 
@@ -8,6 +8,12 @@ const SearchModal = ({ setModalOpen }) => {
   let [query, setQuery] = useSearchParams();
   const [inputQuery, setInputQuery] = useState('');
   const [inputs, setInputs] = useState('');
+
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const handelOnChange = (e) => {
     setInputs(e.target.value);
@@ -47,6 +53,7 @@ const SearchModal = ({ setModalOpen }) => {
               autoComplete="off"
               onKeyPress={handleEnter}
               onChange={handelOnChange}
+              ref={inputRef}
             ></input>
           </form>
         </div>
