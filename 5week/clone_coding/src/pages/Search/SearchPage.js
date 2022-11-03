@@ -13,9 +13,15 @@ const SearchPage = () => {
 
   const searchKeyword = searchParams.get('query');
 
-  const company = dummyForRecruitment.companies.filter((company) =>
-    company.companyName.includes(searchKeyword)
+  const companyList = dummyForRecruitment.companies.filter(
+    (company) =>
+      company.companyName.includes(searchKeyword) ||
+      company.position.includes(searchKeyword)
   );
+
+  const companyNameList = companyList.map((company) => company.companyName);
+
+  const companyNameSet = new Set(companyNameList);
 
   return (
     <>
@@ -24,23 +30,29 @@ const SearchPage = () => {
       </div>
       <section className="search-body">
         <div className="search-content">
-          {company.length ? (
+          {companyList.length ? (
             <div className="search-content__companies">
-              <h2 className="search-content__title">회사 {company.length}</h2>
-              <JobDetailCompany pageId={company[0].id} />
+              <h2 className="search-content__title">
+                회사 {companyNameSet.size}
+              </h2>
+              {Array.from(companyNameSet).map((name) => (
+                <JobDetailCompany pageId={name} />
+              ))}
             </div>
           ) : null}
           <div className="search-content__positions">
-            <h2 className="search-content__title">포지션 {company.length}</h2>
+            <h2 className="search-content__title">
+              포지션 {companyList.length}
+            </h2>
             <div className="search-content__categories">
               <CategorySelections />
               <hr />
               <div className="category-buttons">
                 <CategoryButtonSlider />
               </div>
-              {company.length ? (
+              {companyList.length ? (
                 <ul className="recruitments">
-                  {company.map((searchedCompany) => (
+                  {companyList.map((searchedCompany) => (
                     <Link
                       to={`/wd/${searchedCompany.id}`}
                       key={searchedCompany.id}
@@ -60,7 +72,7 @@ const SearchPage = () => {
               ) : null}
             </div>
           </div>
-          {company.length ? <SearchMoreInfo /> : <SearchNoMore />}
+          {companyList.length ? <SearchMoreInfo /> : <SearchNoMore />}
         </div>
       </section>
     </>

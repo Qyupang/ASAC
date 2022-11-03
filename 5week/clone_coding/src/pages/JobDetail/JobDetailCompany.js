@@ -3,7 +3,7 @@ import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
 const JobDetailCompany = ({ pageId }) => {
   const company = dummyForRecruitment.companies.filter(
-    (company) => company.id === pageId
+    (company) => company.id === pageId || company.companyName === pageId
   )[0];
   return (
     <section className="job-detail__company">
