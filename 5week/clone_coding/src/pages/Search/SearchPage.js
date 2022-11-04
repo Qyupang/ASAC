@@ -35,9 +35,11 @@ const SearchPage = () => {
               <h2 className="search-content__title">
                 회사 {companyNameSet.length}
               </h2>
-              {companyNameSet.map((name) => (
-                <JobDetailCompany pageId={name} />
-              ))}
+              <div className="search-content__company-list">
+                {companyNameSet.map((name) => (
+                  <JobDetailCompany pageId={name} page="search" />
+                ))}
+              </div>
             </div>
           ) : null}
           <div className="search-content__positions">

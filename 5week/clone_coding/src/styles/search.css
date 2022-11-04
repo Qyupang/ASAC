@@ -26,7 +26,7 @@
 
 .search-content {
   margin: 60px auto 80px;
-  width: 90%;
+  width: 1060px;
 }
 
 .search-content__companies {
@@ -100,4 +100,10 @@ hr {
   font-weight: 600;
   color: #fff;
   margin-bottom: 100px;
+}
+
+.search-content__company-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }

@@ -1,12 +1,14 @@
 import React from 'react';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 
-const JobDetailCompany = ({ pageId }) => {
+const JobDetailCompany = ({ pageId, page }) => {
+  const style = page === 'search' ? { width: '477px', margin: '0' } : null;
+
   const company = dummyForRecruitment.companies.filter(
     (company) => company.id === pageId || company.companyName === pageId
   )[0];
   return (
-    <section className="job-detail__company">
+    <section className="job-detail__company" style={style}>
       <div className="job-detail__company__botton-left">
         <img
           src={company.companyImage}
