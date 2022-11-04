@@ -71,6 +71,10 @@
   margin: 0 0 8px;
 }
 
+.email-disabled {
+  background-color: #f2f4f7 !important;
+}
+
 .label-for-email {
   margin: 0 0 7px;
   color: #888888;
@@ -184,7 +188,6 @@
 .register-modal {
   width: 400px;
   height: 870.7px;
-  /* border: 1px solid black; */
   border-radius: 5px;
 }
 
@@ -284,6 +287,19 @@
   height: 50px;
 }
 
+.authenticated-button {
+  background-color: #fff;
+  color: #3336ff;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 16px 15px 14px;
+  font-weight: 700;
+  border: none;
+  width: 117px;
+  height: 50px;
+  border: 1px solid #e1e2e3;
+}
+
 #authentication {
   padding: 1px 95px 1px 15px;
   height: 44px;
@@ -303,6 +319,7 @@
   color: #767676;
   width: 360px;
   height: 100.28px;
+  margin-top: 8px;
   justify-content: space-around;
 }
 
@@ -355,14 +372,14 @@
   background-color: #f2f4f7;
   border-color: transparent;
   color: #cacaca;
-  cursor: not-allowed;
+  cursor: pointer;
   width: 360px;
-  height: 54px;
+  height: 50px;
   text-align: center;
   border-radius: 27px;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .agreements {
@@ -452,10 +469,11 @@
 
 .register-modal__body-button {
   position: sticky;
-  bottom: 3px;
+  bottom: -1px;
   padding-bottom: 40px;
   background-color: #fff;
   height: 50px;
+  width: 400px;
 }
 
 /* search-modal */
@@ -575,12 +593,22 @@
   background-color: #effbf3;
 }
 
-.email-warning__message {
+.warning__message {
   color: #f1415c;
   font-size: 13px;
-  margin: 0 0 8px;
+  margin-bottom: 8px;
 }
 
 .newClassName:focus {
   outline: 2px solid red;
+}
+
+.authenticated-message {
+  color: #3336ff;
+  font-size: 13px;
+  margin: 5px 0 8px;
+}
+
+.authenticated-message h3 {
+  margin-top: 3px;
 }

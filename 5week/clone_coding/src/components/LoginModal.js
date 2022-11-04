@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import WarningMessage from './WarningMessage';
 
-const LoginModal = ({ setModalOpen, setModalMode }) => {
+const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
   const [newClassName, setNewClassName] = useState('');
 
   const closeLoginModal = () => {
@@ -10,6 +10,7 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
   };
   const showRegisterModal = () => {
     setModalMode(2);
+    setcheckedEmail(email);
   };
 
   const [email, setEmail] = useState('');
@@ -18,6 +19,7 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
   const emailCheck = (e) => {
     const regex =
       /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+
     if (e.target.value) {
       if (!regex.test(e.target.value)) {
         setIsValidEmail(false);
@@ -58,7 +60,7 @@ const LoginModal = ({ setModalOpen, setModalMode }) => {
             onChange={emailCheck}
             className={newClassName}
           />
-          {!isValidEmail && <WarningMessage />}
+          {!isValidEmail && <WarningMessage warn={'이메일'} />}
         </form>
         <div className="login-modal__body-buttons">
           <button

@@ -21,7 +21,7 @@ const SearchPage = () => {
 
   const companyNameList = companyList.map((company) => company.companyName);
 
-  const companyNameSet = new Set(companyNameList);
+  const companyNameSet = [...new Set(companyNameList)];
 
   return (
     <>
@@ -33,9 +33,9 @@ const SearchPage = () => {
           {companyList.length ? (
             <div className="search-content__companies">
               <h2 className="search-content__title">
-                회사 {companyNameSet.size}
+                회사 {companyNameSet.length}
               </h2>
-              {Array.from(companyNameSet).map((name) => (
+              {companyNameSet.map((name) => (
                 <JobDetailCompany pageId={name} />
               ))}
             </div>
