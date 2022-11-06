@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Recruit from './Recruit';
+import ShowScroll from './ShowScroll';
 import TopSectionCompany from './TopSectionCompany';
 import dummyForTopSection from '../../db/JobList/topSectionCompany.json';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
@@ -28,7 +29,7 @@ const JobListMain = () => {
       </section>
       <section className="recruitment-announcement">
         <ul className="recruitments">
-          {dummyForRecruitment.companies.map((company) => (
+          {/* {dummyForRecruitment.companies.map((company) => (
             <Link to={`/wd/${company.id}`} key={company.id}>
               <Recruit
                 imgSrc={company.imgSrc}
@@ -40,7 +41,8 @@ const JobListMain = () => {
                 key={company.id}
               />
             </Link>
-          ))}
+          ))} */}
+          <ShowScroll />
         </ul>
       </section>
     </main>
