@@ -16,16 +16,13 @@ const ShowScroll = () => {
     }
   };
 
-  //   useEffect(() => {
-  //     dummyForRecruitment.companies.filter((v, i) => i >= dataLen && i < dataLen + 4).map(setData((prev) => [...prev, ...r])
-  //   }, [dataLen]);
-
-  const hello = dummyForRecruitment.companies
-    .filter((v, i) => i >= dataLen && i < dataLen + 4)
-    .map((company) => setData(1));
-
-  console.log(hello);
-  console.log(data);
+  useEffect(() => {
+    const list = dummyForRecruitment.companies.filter(
+      (company, i) => i < dataLen + 4
+    );
+    setData((prev) => [...list]);
+    console.log('hello');
+  }, [dataLen]);
 
   useEffect(() => {
     window.addEventListener('scroll', handelScroll);
@@ -37,8 +34,8 @@ const ShowScroll = () => {
 
   return (
     <>
-      {dummyForRecruitment.companies.map((company) => (
-        <Link to={`/wd/${company.id}`} key={company.id}>
+      {data.map((company, idx) => (
+        <Link to={`/wd/${company.id}`} key={idx}>
           <Recruit
             imgSrc={company.imgSrc}
             position={company.position}
