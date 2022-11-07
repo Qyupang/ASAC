@@ -199,6 +199,83 @@
       "id": 16,
       "workCategory": "IT,컨텐츠",
       "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1785%2Fc55a8i71rfkancp9__1080_790.png&w=1000&q=75",
+      "position": "React Native 시니어 개발자",
+      "companyName": "콜라비팀(Collabee)",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 17,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F17970%2Fnif15q6g7v9rker4__1080_790.jpg&w=1000&q=75",
+      "position": "테크 리드 (Tech Lead)",
+      "companyName": "펄핏",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 18,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1785%2Fc55a8i71rfkancp9__1080_790.png&w=1000&q=75",
+      "position": "Front-End 개발(Javascript / React.js)",
+      "companyName": "콜라비팀(Collabee)",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 19,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2359%2Fjkkly8ioqdymahfs__1080_790.jpg&w=1000&q=75",
+      "position": "iOS 개발자",
+      "companyName": "아이엠지베이스",
+      "responseRate": "응답률 매우 높음",
+      "location": "경기·한국",
+      "incentive": 1000000,
+      "id": 20,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F25912%2Feu3nk4q7gb3xdn2i__1080_790.png&w=1000&q=75",
+      "position": "Data Engineer",
+      "companyName": "데이터라이즈",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 21,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F25912%2Feu3nk4q7gb3xdn2i__1080_790.png&w=1000&q=75",
+      "position": "Backend Engineer",
+      "companyName": "데이터라이즈",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 21,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
+    },
+    {
+      "imgSrc": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30989%2Fz4vdmaoprnqt4ody__1080_790.jpg&w=1000&q=75",
+      "position": "백엔드 개발자(Node.js)",
+      "companyName": "테크스페이스",
+      "responseRate": "응답률 매우 높음",
+      "location": "서울·한국",
+      "incentive": 1000000,
+      "id": 22,
+      "workCategory": "IT,컨텐츠",
+      "companyImage": "https://static.wanted.co.kr/images/wdes/0_5.3705bdca.jpeg"
     }
   ]
 }
