@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import WarningMessage from './WarningMessage';
+import useInput from '../hooks/useInput';
 
 const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
   const [newClassName, setNewClassName] = useState('');
@@ -13,24 +14,24 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
     setcheckedEmail(email);
   };
 
-  const [email, setEmail] = useState('');
-  const [isValidEmail, setIsValidEmail] = useState(true);
-
-  const emailCheck = (e) => {
+  const emailValidation = (email) => {
     const regex =
       /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
-    if (e.target.value) {
-      if (!regex.test(e.target.value)) {
-        setIsValidEmail(false);
-        setNewClassName('newClassName');
-      } else {
-        setIsValidEmail(true);
-        setEmail(e.target.value);
-        setNewClassName('');
-      }
+    if (!regex.test(email)) {
+      setNewClassName('newClassName');
+      return false;
+    } else {
+      setNewClassName('');
+      return true;
     }
   };
+
+  const {
+    value: email,
+    onChange: emailChange,
+    isValid: isValidEmail,
+  } = useInput('', emailValidation, true);
 
   return (
     <div className="login-modal">
@@ -57,7 +58,8 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
             type="email"
             id="email"
             placeholder="이메일을 입력해주세요."
-            onChange={emailCheck}
+            value={email}
+            onChange={emailChange}
             className={newClassName}
           />
           {!isValidEmail && <WarningMessage warn={'이메일'} />}
