@@ -3,6 +3,7 @@ import WarningMessage from './WarningMessage';
 import AuthenticMessage from './AuthenticMessage';
 import PasswordGuide from './PasswordGuide';
 import RegisterButton from './RegisterButton';
+import useInput from '../hooks/useInput';
 
 const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
   const [checkAll, setCheckAll] = useState(false);
@@ -13,7 +14,6 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
   const [authenticText, setAuthenticText] = useState('인증번호 받기');
   const [phoneNum, setPhoneNum] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState('');
   const [isValidName, setIsValidName] = useState(false);
   const [pwConfirm, setPwConfirm] = useState('');
   const [isValidPw, setIsValidPw] = useState('start');
@@ -26,12 +26,9 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
     setModalMode(0);
   };
 
-  const onChangeName = (e) => {
-    if (e.target.value) {
-      setName(e.target.value);
-      setIsValidName(true);
-    }
-  };
+  const nameValid = (name) => name.length < 10;
+
+  const nameCheck = useInput('', nameValid);
 
   const phoneNumCheck = (e) => {
     const regex = /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/;
@@ -152,11 +149,16 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
         <div className="login-modal__name">
           <form action="" className="name-form">
             <label for="username">이름</label>
-            <input
+            {/* <input
               type="text-box"
               id="username"
               placeholder="이름을 입력해 주세요."
               onChange={onChangeName}
+            /> */}
+            <input
+              id="username"
+              placeholder="이름을 입력해 주세요."
+              {...nameCheck}
             />
           </form>
         </div>
