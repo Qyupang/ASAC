@@ -1,19 +1,17 @@
 import { useState } from 'react';
 
-const useInput = (initialValue, validator) => {
+const useInput = (initialValue, validator, initialValid = false) => {
   const [value, setValue] = useState(initialValue);
+  const [isValid, setIsValid] = useState(initialValid);
 
   const onChange = (event) => {
     const input = event.target.value;
-    let willUpdate = true;
+    setValue(input);
     if (typeof validator === 'function') {
-      willUpdate = validator(input);
-    }
-    if (willUpdate) {
-      setValue(input);
+      setIsValid(validator(input));
     }
   };
-  return { value, onChange };
+  return { value, onChange, isValid };
 };
 
 export default useInput;

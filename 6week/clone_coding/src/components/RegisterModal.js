@@ -9,15 +9,8 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
   const [checkAll, setCheckAll] = useState(false);
   const [firstCheck, setFirstCheck] = useState(false);
   const [secondCheck, setSecondCheck] = useState(false);
-  const [isValidNum, setIsValidNum] = useState(false);
   const [newClassName, setNewClassName] = useState('authentication-button');
   const [authenticText, setAuthenticText] = useState('인증번호 받기');
-  const [phoneNum, setPhoneNum] = useState('');
-  const [password, setPassword] = useState('');
-  const [isValidName, setIsValidName] = useState(false);
-  const [pwConfirm, setPwConfirm] = useState('');
-  const [isValidPw, setIsValidPw] = useState('start');
-  const [isValidConfirm, setIsValidConfirm] = useState('confirm start');
   const [authenticNum, setAuthenticNum] = useState('');
   const [isValidAuthenNum, setIsValidAuthenNum] = useState(false);
 
@@ -26,50 +19,70 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
     setModalMode(0);
   };
 
-  const nameValid = (name) => name.length < 10;
+  const nameValidation = (name) => {
+    const regex = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 
-  const nameCheck = useInput('', nameValid);
+    if (!regex.test(name)) {
+      return false;
+    } else {
+      return true;
+    }
+  };
 
-  const phoneNumCheck = (e) => {
+  const phoneNumValidation = (phoneNum) => {
     const regex = /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/;
 
-    if (e.target.value) {
-      if (!regex.test(e.target.value)) {
-        setIsValidNum(false);
-        setPhoneNum(e.target.value);
+    if (phoneNum) {
+      if (!regex.test(phoneNum)) {
         setNewClassName('authentication-button');
+        return false;
       } else {
-        setIsValidNum(true);
-        setPhoneNum(e.target.value);
         setNewClassName('authenticated-button');
+        return true;
       }
     }
   };
 
-  const passwordCheck = (e) => {
+  const passwordValidation = (password) => {
     const regex = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
-    if (e.target.value) {
-      if (!regex.test(e.target.value)) {
-        setIsValidPw(false);
-        setPassword(e.target.value);
-      } else {
-        setIsValidPw(true);
-        setPassword(e.target.value);
-      }
+    if (!regex.test(password)) {
+      return false;
+    } else {
+      return true;
     }
   };
 
-  const passwordConfirm = (e) => {
-    if (e.target.value) {
-      if (e.target.value !== password) {
-        setPwConfirm(e.target.value);
-        setIsValidConfirm('confirm false');
-      } else {
-        setPwConfirm(e.target.value);
-        setIsValidConfirm('confirm true');
-      }
+  const confirmValidation = (pwConfirm) => {
+    if (pwConfirm !== password) {
+      return 'confirm false';
+    } else {
+      return 'confirm true';
     }
   };
+
+  const {
+    value: name,
+    onChange: nameChange,
+    isValid: isValidName,
+  } = useInput('', nameValidation);
+
+  const {
+    value: phoneNum,
+    onChange: phoneNumChange,
+    isValid: isValidPhoneNum,
+  } = useInput('', phoneNumValidation);
+
+  const {
+    value: password,
+    onChange: passwordChange,
+    isValid: isValidPw,
+  } = useInput('', passwordValidation, 'start');
+
+  const {
+    value: passwordConfirm,
+    onChange: pwConfirmChange,
+    isValid: isValidConfirm,
+  } = useInput('', confirmValidation, 'confirm start');
 
   const authenticButtonClicked = (e) => {
     e.preventDefault();
@@ -149,16 +162,11 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
         <div className="login-modal__name">
           <form action="" className="name-form">
             <label for="username">이름</label>
-            {/* <input
-              type="text-box"
-              id="username"
-              placeholder="이름을 입력해 주세요."
-              onChange={onChangeName}
-            /> */}
             <input
               id="username"
               placeholder="이름을 입력해 주세요."
-              {...nameCheck}
+              value={name}
+              onChange={nameChange}
             />
           </form>
         </div>
@@ -175,16 +183,19 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
                 type="tel"
                 id="phone-number"
                 placeholder="(예시)01034567890"
-                onChange={phoneNumCheck}
+                value={phoneNum}
+                onChange={phoneNumChange}
               />
               <button
                 className={newClassName}
-                disabled={!isValidNum}
+                disabled={!isValidPhoneNum}
                 onClick={authenticButtonClicked}
               >
                 {authenticText}
               </button>
-              {!isValidNum && phoneNum && <WarningMessage warn={'전화번호'} />}
+              {!isValidPhoneNum && phoneNum && (
+                <WarningMessage warn={'전화번호'} />
+              )}
               <input
                 type="text"
                 id="authentication"
@@ -203,7 +214,8 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
               type="password"
               id="password"
               placeholder="비밀번호를 입력해 주세요."
-              onChange={passwordCheck}
+              onChange={passwordChange}
+              value={password}
             />
             <PasswordGuide condition={isValidPw} />
           </form>
@@ -214,7 +226,8 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
             type="password"
             id="password-confirm"
             placeholder="비밀번호를 다시 한번 입력해 주세요."
-            onChange={passwordConfirm}
+            onChange={pwConfirmChange}
+            value={passwordConfirm}
           />
           {<PasswordGuide condition={isValidConfirm} />}
         </div>
@@ -266,7 +279,7 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
         <div className="register-modal__body-button">
           <RegisterButton
             allowed={
-              isValidNum &&
+              isValidPhoneNum &&
               isValidPw &&
               isValidAuthenNum &&
               isValidConfirm &&
