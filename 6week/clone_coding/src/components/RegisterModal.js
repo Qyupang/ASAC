@@ -4,6 +4,7 @@ import AuthenticMessage from './AuthenticMessage';
 import PasswordGuide from './PasswordGuide';
 import RegisterButton from './RegisterButton';
 import useInput from '../hooks/useInput';
+import AuthenticButton from './AuthenticButton';
 
 const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
   const [checkAll, setCheckAll] = useState(false);
@@ -92,11 +93,6 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
 
   const authenticNumCheck = (e) => {
     setAuthenticNum(e.target.value);
-    if (e.target.value === '1111') {
-      setIsValidAuthenNum(true);
-    } else {
-      setIsValidAuthenNum(false);
-    }
   };
 
   const onChange = (event) => {
@@ -155,7 +151,7 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
               id="email"
               className="email-disabled"
               placeholder={checkedEmail}
-              disabled="true"
+              required
             />
           </form>
         </div>
@@ -167,6 +163,7 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
               placeholder="이름을 입력해 주세요."
               value={name}
               onChange={nameChange}
+              required
             />
           </form>
         </div>
@@ -185,6 +182,7 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
                 placeholder="(예시)01034567890"
                 value={phoneNum}
                 onChange={phoneNumChange}
+                required
               />
               <button
                 className={newClassName}
@@ -200,11 +198,30 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
                 type="text"
                 id="authentication"
                 placeholder="인증번호를 입력해 주세요."
-                disabled={authenticText !== '인증번호 재전송'}
+                disabled={
+                  authenticText !== '인증번호 재전송' || isValidAuthenNum
+                }
+                style={
+                  isValidAuthenNum
+                    ? {
+                        backgroundColor: '#f2f4f7',
+                        color: '#CCCCCC',
+                      }
+                    : null
+                }
                 onChange={authenticNumCheck}
               />
+              {authenticText === '인증번호 재전송' && (
+                <AuthenticButton
+                  setIsValidAuthenNum={setIsValidAuthenNum}
+                  authenticNum={authenticNum}
+                  isValidAuthenNum={isValidAuthenNum}
+                />
+              )}
             </div>
-            {authenticText === '인증번호 재전송' && <AuthenticMessage />}
+            {authenticText === '인증번호 재전송' && (
+              <AuthenticMessage isValidAuthenNum={isValidAuthenNum} />
+            )}
           </form>
         </div>
         <div className="password">
@@ -216,6 +233,7 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
               placeholder="비밀번호를 입력해 주세요."
               onChange={passwordChange}
               value={password}
+              required
             />
             <PasswordGuide condition={isValidPw} />
           </form>
@@ -228,6 +246,7 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
             placeholder="비밀번호를 다시 한번 입력해 주세요."
             onChange={pwConfirmChange}
             value={passwordConfirm}
+            required
           />
           {<PasswordGuide condition={isValidConfirm} />}
         </div>
@@ -286,6 +305,8 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
               isValidName &&
               checkAll
             }
+            setModalOpen={setModalOpen}
+            setModalMode={setModalMode}
           />
         </div>
       </div>

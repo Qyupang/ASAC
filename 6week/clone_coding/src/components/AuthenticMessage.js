@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const AuthenticMessage = () => {
+const AuthenticMessage = ({ isValidAuthenNum }) => {
   const [minutes, setMinutes] = useState(5);
   const [seconds, setSeconds] = useState(0);
 
@@ -23,10 +23,16 @@ const AuthenticMessage = () => {
 
   return (
     <div className="authenticated-message">
-      <h3>인증번호가 요청되었습니다.</h3>
-      <h3>
-        유효시간 {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-      </h3>
+      {!isValidAuthenNum ? (
+        <>
+          <h3>인증번호가 요청되었습니다.</h3>
+          <h3>
+            유효시간 {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+          </h3>
+        </>
+      ) : (
+        <h3 style={{ color: '#89C18B' }}>인증되었습니다.</h3>
+      )}
     </div>
   );
 };
