@@ -50,7 +50,11 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
             지금 원티드에서 시작하세요.
           </h2>
         </div>
-        <form action="" className="email-form">
+        <form
+          action=""
+          className="email-form"
+          onSubmit={(event) => event.preventDefault()}
+        >
           <label for="email" className="label-for-email">
             이메일
           </label>

@@ -151,12 +151,16 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
               id="email"
               className="email-disabled"
               placeholder={checkedEmail}
-              required
+              disabled={true}
             />
           </form>
         </div>
         <div className="login-modal__name">
-          <form action="" className="name-form">
+          <form
+            action=""
+            className="name-form"
+            onSubmit={(event) => event.preventDefault()}
+          >
             <label for="username">이름</label>
             <input
               id="username"
@@ -168,7 +172,11 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
           </form>
         </div>
         <div className="login-modal__phone-number">
-          <form action="" className="number-form">
+          <form
+            action=""
+            className="number-form"
+            onSubmit={(event) => event.preventDefault()}
+          >
             <label for="phone-number">휴대폰 번호</label>
             <select name="country" id="select-country">
               <option value="kor">대한민국 +82</option>
@@ -225,7 +233,11 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
           </form>
         </div>
         <div className="password">
-          <form action="" className="password-form">
+          <form
+            action=""
+            className="password-form"
+            onSubmit={(event) => event.preventDefault()}
+          >
             <label for="password">비밀번호</label>
             <input
               type="password"
