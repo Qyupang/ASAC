@@ -66,17 +66,7 @@ const JobDetailMain = ({ pageId }) => {
         <section className="recruitment-announcement">
           <ul className="recruitments">
             {dummyForRecruitment.companies.map((company) => (
-              <Link to={`/wd/${company.id}`} key={company.id}>
-                <Recruit
-                  imgSrc={company.imgSrc}
-                  position={company.position}
-                  companyName={company.companyName}
-                  responseRate={company.responseRate}
-                  location={company.responseRate}
-                  incentive={company.incentive}
-                  key={company.id}
-                />
-              </Link>
+              <Recruit company={company} key={company.id} />
             ))}
           </ul>
         </section>

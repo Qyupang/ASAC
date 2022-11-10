@@ -7,8 +7,6 @@ import { useParams } from 'react-router-dom';
 const JobDetail = () => {
   const { id } = useParams();
 
-  console.log('params:', id);
-
   return (
     <div className="root">
       <JobDetailMain pageId={Number(id)} />

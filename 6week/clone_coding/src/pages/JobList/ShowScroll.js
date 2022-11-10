@@ -34,18 +34,8 @@ const ShowScroll = () => {
 
   return (
     <>
-      {data.map((company, idx) => (
-        <Link to={`/wd/${company.id}`} key={idx}>
-          <Recruit
-            imgSrc={company.imgSrc}
-            position={company.position}
-            companyName={company.companyName}
-            responseRate={company.responseRate}
-            location={company.responseRate}
-            incentive={company.incentive}
-            key={company.id}
-          />
-        </Link>
+      {data.map((company) => (
+        <Recruit company={company} key={company.id} />
       ))}
     </>
   );
