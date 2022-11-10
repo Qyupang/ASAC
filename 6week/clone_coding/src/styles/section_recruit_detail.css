@@ -270,8 +270,18 @@
 
 .sticky-reward__bookmark {
   border-color: #36f;
-  color: #36f;
   background-color: #fff;
+  position: relative;
+}
+
+.sticky-reward__bookmark span {
+  color: #36f;
+}
+
+.sticky-reward__bookmark-icon {
+  position: absolute;
+  left: 90px;
+  top: 12px;
 }
 
 .sticky-reward__apply {
