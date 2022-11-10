@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 import Recruit from './Recruit';
-import { Link } from 'react-router-dom';
 
 const ShowScroll = () => {
   const [data, setData] = useState([]);
