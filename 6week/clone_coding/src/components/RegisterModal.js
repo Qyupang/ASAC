@@ -319,6 +319,8 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
             }
             setModalOpen={setModalOpen}
             setModalMode={setModalMode}
+            email={checkedEmail}
+            password={password}
           />
         </div>
       </div>

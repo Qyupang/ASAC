@@ -670,3 +670,75 @@
   border: 1px solid #767676;
   border-radius: 20px;
 }
+
+.password-modal {
+  width: 400px;
+  height: 366px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 11;
+}
+
+.password-modal__header {
+  padding: 0 20px;
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.password-modal__header span {
+  font-size: 17px;
+  font-weight: 400;
+  align-items: center;
+  width: 64px;
+  margin: 18px 0;
+}
+
+.password-modal__header h1 {
+  width: 230px;
+  margin: 18px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.password-modal__header div {
+  width: 64px;
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+.password-modal__body {
+  padding: 20px;
+  width: 358px;
+  height: 262px;
+  display: flex;
+  flex-direction: column;
+}
+
+.password-modal__body button {
+  height: 50px;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  color: #ccc;
+  background-color: #f2f4f7;
+  border: none;
+}
+
+.password-modal__body span {
+  height: 50px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 23px;
+  color: #3366ff;
+  cursor: pointer;
+  padding: 1px 6px;
+  text-align: center;
+}

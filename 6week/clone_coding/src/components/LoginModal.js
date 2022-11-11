@@ -5,12 +5,18 @@ import useInput from '../hooks/useInput';
 const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
   const [newClassName, setNewClassName] = useState('');
 
+  const localStorage = window.localStorage;
+
   const closeLoginModal = () => {
     setModalOpen(false);
     setModalMode(0);
   };
   const showRegisterModal = () => {
     setModalMode(2);
+    setcheckedEmail(email);
+  };
+  const showPasswordModal = () => {
+    setModalMode(4);
     setcheckedEmail(email);
   };
 
@@ -32,6 +38,25 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
     onChange: emailChange,
     isValid: isValidEmail,
   } = useInput('', emailValidation, true);
+
+  const handleOnclick = () => {
+    IsEmailExist(email) ? showPasswordModal() : showRegisterModal();
+  };
+
+  const IsEmailExist = (email) => {
+    let emails = localStorage.getItem('emails');
+    if (emails === null) {
+      localStorage.setItem('emails', email);
+      return false;
+    } else {
+      if (emails.includes(email)) {
+        return true;
+      } else {
+        localStorage.setItem('emails', [emails, email]);
+        return false;
+      }
+    }
+  };
 
   return (
     <div className="login-modal">
@@ -72,9 +97,7 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
           <button
             className="login-modal__body-button-email"
             disabled={!isValidEmail || !email}
-            onClick={() => {
-              showRegisterModal();
-            }}
+            onClick={handleOnclick}
           >
             <i className="fa-regular fa-envelope"></i>
             이메일로 계속하기

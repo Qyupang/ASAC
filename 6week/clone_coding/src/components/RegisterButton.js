@@ -1,11 +1,20 @@
 import React from 'react';
 
-const RegisterButton = ({ allowed, setModalMode }) => {
+const RegisterButton = ({
+  allowed,
+  setModalOpen,
+  setModalMode,
+  email,
+  password,
+}) => {
   const style = allowed ? { backgroundColor: 'blue', color: 'white' } : null;
+  const localStorage = window.localStorage;
 
   const onClick = (event) => {
     event.preventDefault();
     setModalMode(3);
+    localStorage.setItem('email', email);
+    localStorage.setItem(`${email}`, password);
   };
 
   return (

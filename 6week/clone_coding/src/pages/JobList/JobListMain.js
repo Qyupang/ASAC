@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ShowScroll from './ShowScroll';
 import TopSectionCompany from './TopSectionCompany';
 import dummyForTopSection from '../../db/JobList/topSectionCompany.json';
@@ -9,7 +10,9 @@ const JobListMain = () => {
       <section className="top-section">
         <div className="bookmark">
           <i className="fa-solid fa-bookmark"></i>
-          <span> 북마크 모아보기 &gt;</span>
+          <Link to="/bookmarks">
+            <span> 북마크 모아보기 &gt;</span>
+          </Link>
         </div>
         <span className="top-section__title"> 적극 채용 중인 회사 </span>
         <div className="top-setion__companies">

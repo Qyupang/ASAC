@@ -20,7 +20,6 @@ const ShowScroll = () => {
       (company, i) => i < dataLen + 4
     );
     setData((prev) => [...list]);
-    console.log('hello');
   }, [dataLen]);
 
   useEffect(() => {
