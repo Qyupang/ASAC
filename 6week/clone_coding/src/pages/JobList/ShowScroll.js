@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 import Recruit from './Recruit';
 
@@ -11,13 +11,13 @@ const ShowScroll = () => {
     const scrollTop = document.documentElement.scrollTop;
     const clientHeight = document.documentElement.clientHeight;
     if (scrollTop + clientHeight >= scrollHeight - 10) {
-      setDataLen((prev) => prev + 4);
+      setDataLen((prev) => prev + 8);
     }
   };
 
   useEffect(() => {
     const list = dummyForRecruitment.companies.filter(
-      (company, i) => i < dataLen + 4
+      (company, i) => i < dataLen + 8
     );
     setData((prev) => [...list]);
   }, [dataLen]);

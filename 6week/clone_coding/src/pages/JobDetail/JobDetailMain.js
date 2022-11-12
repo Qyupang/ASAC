@@ -10,6 +10,7 @@ import JobDetailAnouncement from './JobDetailAnouncement';
 import JobDetailCompany from './JobDetailCompany';
 import JobDetailMainContent from './JobDetailMainContent';
 import { Link } from 'react-router-dom';
+import ShowScroll from '../JobList/ShowScroll';
 
 const JobDetailMain = ({ pageId }) => {
   const [hidden, setHidden] = useState(true);
@@ -65,9 +66,10 @@ const JobDetailMain = ({ pageId }) => {
         </span>
         <section className="recruitment-announcement">
           <ul className="recruitments">
-            {dummyForRecruitment.companies.map((company) => (
+            {/* {dummyForRecruitment.companies.map((company) => (
               <Recruit company={company} key={company.id} />
-            ))}
+            ))} */}
+            <ShowScroll />
           </ul>
         </section>
       </section>
