@@ -61,15 +61,7 @@ const SearchPage = () => {
                       to={`/wd/${searchedCompany.id}`}
                       key={searchedCompany.id}
                     >
-                      <Recruit
-                        imgSrc={searchedCompany.imgSrc}
-                        position={searchedCompany.position}
-                        companyName={searchedCompany.companyName}
-                        responseRate={searchedCompany.responseRate}
-                        location={searchedCompany.responseRate}
-                        incentive={searchedCompany.incentive}
-                        key={searchedCompany.id}
-                      />
+                      <Recruit company={searchedCompany} />
                     </Link>
                   ))}
                 </ul>

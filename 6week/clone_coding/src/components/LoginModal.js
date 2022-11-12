@@ -46,13 +46,11 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
   const IsEmailExist = (email) => {
     let emails = localStorage.getItem('emails');
     if (emails === null) {
-      localStorage.setItem('emails', email);
       return false;
     } else {
       if (emails.includes(email)) {
         return true;
       } else {
-        localStorage.setItem('emails', [emails, email]);
         return false;
       }
     }

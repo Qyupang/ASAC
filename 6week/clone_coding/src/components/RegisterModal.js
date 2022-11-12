@@ -96,11 +96,9 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
   };
 
   const onChange = (event) => {
-    console.log('event', event.target.checked);
     setCheckAll(event.target.checked);
     setFirstCheck(event.target.checked);
     setSecondCheck(event.target.checked);
-    console.log(firstCheck, secondCheck);
   };
 
   const onChangeIndividual = (event) => {

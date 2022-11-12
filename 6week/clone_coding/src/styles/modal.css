@@ -623,8 +623,7 @@
 
 .useterm-modal {
   width: 400px;
-  /* height: 680px; */
-  height: 500px;
+  height: 580px;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -636,9 +635,9 @@
 }
 
 .useterm-modal__header {
-  /* border: 1px solid black; */
   position: relative;
   height: 50px;
+  margin: 10px 0 20px;
 }
 
 .useterm-modal__cancel {
@@ -652,7 +651,7 @@
 
 .useTerm-modal__title {
   text-align: center;
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 600;
   padding: 12.5px 0;
 }
@@ -667,8 +666,100 @@
 .useterm-modal__wanted-logo {
   width: 70px;
   height: 70px;
-  border: 1px solid #767676;
+  border: 1px solid #e1e2e3;
   border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.useterm-modal__wanted-name {
+  font-size: 19px;
+}
+
+.useterm-modal__account-info {
+  display: flex;
+  border: 1px solid #e1e2e3;
+  width: 85%;
+  margin: 20px auto;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  font-size: 14px;
+  color: #767676;
+}
+
+.useterm-modal__left {
+  display: flex;
+  align-items: center;
+}
+
+.useterm-modal__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.useterm-modal__email {
+  margin-left: 10px;
+}
+
+.useTerm-modal__checkboxes {
+  width: 90%;
+  margin: 0px auto;
+  font-size: 16px;
+}
+
+.useTerm-modal__checkboxes span {
+  margin-left: 5px;
+}
+
+.useTerm-modal__checkboxes hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-checkboxes p {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.detail-checkboxes {
+  display: flex;
+  flex-direction: column;
+  color: #bbb5b5;
+  font-size: 16px;
+}
+
+.detail-checkbox__first {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.detail-checkbox__second {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.checks-for__detail {
+  display: flex;
+  margin: 8px 20px;
+}
+
+.checks-for__detail div {
+  margin: 0px 10px;
+}
+
+.useterm-modal__button {
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  color: #ccc;
+  background-color: #f2f4f7;
+  border: none;
 }
 
 .password-modal {
@@ -736,7 +827,7 @@
   height: 50px;
   font-size: 14px;
   margin-bottom: 10px;
-  margin-top: 23px;
+  margin-top: 25px;
   color: #3366ff;
   cursor: pointer;
   padding: 1px 6px;
