@@ -1,6 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { logout } from '../modules/Login';
 
 const ProfileMenuModal = () => {
+  const dispatch = useDispatch();
+
+  const getLogout = () => {
+    dispatch(logout());
+  };
+
   return (
     <div className="profile">
       <div className="bubble-point"></div>
@@ -32,7 +40,7 @@ const ProfileMenuModal = () => {
           <span>포인트</span>
         </li>
         <div className="last-div" />
-        <li className="logout">
+        <li className="logout" onClick={getLogout}>
           <span className="logout-span">로그아웃</span>
         </li>
       </ul>
