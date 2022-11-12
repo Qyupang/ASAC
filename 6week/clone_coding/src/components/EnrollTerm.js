@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { login } from '../modules/Login';
 
 const EnrollTerm = ({ setModalOpen, setModalMode, checkedEmail }) => {
+  const dispatch = useDispatch();
+
+  const getLogin = () => dispatch(login());
+
   const checks = ['first', 'second', 'third'];
   const [checkAll, setCheckAll] = useState(false);
   const [checkList, setCheckList] = useState([]);
@@ -179,6 +185,7 @@ const EnrollTerm = ({ setModalOpen, setModalMode, checkedEmail }) => {
             onClick={() => {
               setModalOpen(false);
               setModalMode(0);
+              getLogin();
             }}
           >
             동의하고 계속하기

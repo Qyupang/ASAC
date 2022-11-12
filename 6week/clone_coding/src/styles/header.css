@@ -122,3 +122,21 @@ a {
 .bar {
   opacity: 0.2;
 }
+
+.header__loggedin-icon {
+  display: flex;
+  align-items: center;
+}
+
+.header__loggedin-icon__bell {
+  color: #333;
+  font-size: 18px;
+  margin: 0 18px 0px 10px;
+}
+
+.header__loggedin-icon__avatar {
+  height: 28px;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 50%;
+}

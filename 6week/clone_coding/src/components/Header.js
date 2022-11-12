@@ -4,8 +4,15 @@ import LoginButton from './LoginButton';
 import { Link } from 'react-router-dom';
 import SearchButton from './SearchButton';
 import Hamburger from './Hamburger';
+import LoggedUserIcon from './LoggedUserIcon';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../modules/Login';
 
 function Header() {
+  // const dispatch = useDispatch();
+
+  const isLogined = useSelector((state) => state.login.logged);
+
   return (
     <header>
       <div className="header">
@@ -23,7 +30,9 @@ function Header() {
               </li>
             </Link>
             <li>
-              <span className="none">이벤트 </span>
+              <span className="none" onClick={() => console.log(isLogined)}>
+                이벤트{' '}
+              </span>
             </li>
             <li>
               <span className="none">직군별 연봉 </span>
@@ -44,7 +53,7 @@ function Header() {
         </nav>
         <div className="right-side">
           <SearchButton />
-          <LoginButton />
+          {isLogined ? <LoggedUserIcon /> : <LoginButton />}
           <span className="bar">|</span>
           <a
             href="https://www.wanted.co.kr/dashboard/welcome"

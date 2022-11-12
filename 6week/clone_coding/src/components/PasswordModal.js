@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { login } from '../modules/Login';
 
 const PasswordModal = ({ checkedEmail, setModalOpen, setModalMode }) => {
   const [inputPassword, setInputPassword] = useState('');
@@ -9,6 +11,10 @@ const PasswordModal = ({ checkedEmail, setModalOpen, setModalMode }) => {
   const [checkPassword, setCheckPassword] = useState(true);
   const inputRef = useRef();
   const localStorage = window.localStorage;
+
+  const dispatch = useDispatch();
+
+  const getlogin = () => dispatch(login());
 
   useEffect(() => {
     inputRef.current.focus();
@@ -27,11 +33,11 @@ const PasswordModal = ({ checkedEmail, setModalOpen, setModalMode }) => {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     const password = localStorage.getItem(checkedEmail);
-    console.log(inputPassword);
     if (password === inputPassword) {
       setCheckPassword(true);
       setModalMode(0);
       setModalOpen(false);
+      getlogin();
     } else {
       setButtonChange(false);
       setCheckPassword(false);
@@ -72,7 +78,7 @@ const PasswordModal = ({ checkedEmail, setModalOpen, setModalMode }) => {
           </form>
         </div>
         <button
-          disabled={buttonChange}
+          disabled={!buttonChange}
           style={
             buttonChange ? { color: 'white', backgroundColor: '#36f' } : null
           }

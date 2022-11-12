@@ -18,8 +18,6 @@ const Recruit = ({ company }) => {
 
   const bookmarkList = useSelector((state) => state);
 
-  console.log(bookmarkList);
-
   const [isBookMarked, setIsBookMarked] = useState(false);
 
   return (
