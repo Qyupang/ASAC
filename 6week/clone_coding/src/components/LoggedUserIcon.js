@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProfileMenuModal from './ProfileMenuModal';
 
 const LoggedUserIcon = () => {
   const [avatarClicked, setAvatarClicked] = useState(false);
@@ -17,6 +18,7 @@ const LoggedUserIcon = () => {
         onClick={showMenu}
         style={avatarClicked ? { border: '1px solid #5688ff' } : null}
       />
+      {avatarClicked ? <ProfileMenuModal /> : null}
     </div>
   );
 };
