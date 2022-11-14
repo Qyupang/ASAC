@@ -20,7 +20,7 @@ const Bookmarks = () => {
       <div className="bookmark-page__body">
         <ul className="recruitments">
           {companyList.map((company) => (
-            <Recruit company={company} key={company.id} />
+            <Recruit company={company} key={company.id} bookmarked={true} />
           ))}
         </ul>
       </div>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBookmark, removeBookmark } from '../../modules/Bookmark';
 
-const Recruit = ({ company }) => {
+const Recruit = ({ company, bookmarked }) => {
   const navigate = useNavigate();
 
   const onClick = () => {
@@ -18,7 +18,11 @@ const Recruit = ({ company }) => {
 
   const bookmarkList = useSelector((state) => state);
 
-  const [isBookMarked, setIsBookMarked] = useState(false);
+  const listOfBookmark = bookmarkList?.bookmark?.bookmarkList;
+
+  const [isBookMarked, setIsBookMarked] = useState(
+    listOfBookmark ? listOfBookmark.includes(company.id) : false
+  );
 
   return (
     <li className="recruitment">

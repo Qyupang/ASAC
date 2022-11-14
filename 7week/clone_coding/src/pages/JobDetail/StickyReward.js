@@ -2,9 +2,31 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { setBookmark, removeBookmark } from '../../modules/Bookmark';
 
 const StickyReward = () => {
-  const [isBookMarked, setIsBookMarked] = useState(false);
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const checkBookmark = (id) => dispatch(setBookmark(id));
+  const uncheckBookmark = (id) => dispatch(removeBookmark(id));
+
+  const bookmarkList = useSelector((state) => state);
+  const listOfBookmark = bookmarkList?.bookmark?.bookmarkList;
+  const [isBookMarked, setIsBookMarked] = useState(
+    listOfBookmark ? listOfBookmark.includes(Number(id)) : false
+  );
+
+  const handleUncheck = () => {
+    uncheckBookmark(Number(id));
+    setIsBookMarked(!isBookMarked);
+  };
+
+  const handleCheck = () => {
+    checkBookmark(Number(id));
+    setIsBookMarked(!isBookMarked);
+  };
 
   return (
     <div className="sticky-reward">
@@ -29,9 +51,7 @@ const StickyReward = () => {
       <button
         className="sticky-reward__bookmark sticky-btn"
         onClick={() => {
-          isBookMarked
-            ? setIsBookMarked(!isBookMarked)
-            : setIsBookMarked(!isBookMarked);
+          isBookMarked ? handleUncheck() : handleCheck();
         }}
       >
         <svg
