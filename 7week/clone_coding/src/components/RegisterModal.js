@@ -5,6 +5,7 @@ import PasswordGuide from './PasswordGuide';
 import RegisterButton from './RegisterButton';
 import useInput from '../hooks/useInput';
 import AuthenticButton from './AuthenticButton';
+import ModalInput from '../styles/ModalInput';
 
 const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
   const [checkAll, setCheckAll] = useState(false);
@@ -144,7 +145,14 @@ const RegisterModal = ({ setModalOpen, setModalMode, checkedEmail }) => {
         <div className="login-modal__email">
           <form action="" className="email-form">
             <label for="email">이메일</label>
-            <input
+            {/* <input
+              type="text-box"
+              id="email"
+              className="email-disabled"
+              placeholder={checkedEmail}
+              disabled={true}
+            /> */}
+            <ModalInput.EmailInput
               type="text-box"
               id="email"
               className="email-disabled"
