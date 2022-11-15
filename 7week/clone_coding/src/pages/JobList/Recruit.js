@@ -16,13 +16,7 @@ const Recruit = ({ company, bookmarked }) => {
   const checkBookmark = (id) => dispatch(setBookmark(id));
   const uncheckBookmark = (id) => dispatch(removeBookmark(id));
 
-  const bookmarkList = useSelector((state) => state);
-
-  const listOfBookmark = bookmarkList?.bookmark?.bookmarkList;
-
-  const [isBookMarked, setIsBookMarked] = useState(
-    listOfBookmark ? listOfBookmark.includes(company.id) : false
-  );
+  const bookmarkList = useSelector((state) => state.bookmark.bookmarkList);
 
   return (
     <li className="recruitment">
@@ -40,12 +34,9 @@ const Recruit = ({ company, bookmarked }) => {
         xmlns="https://www.w3.org/2000/svg"
         className="bookmark-icon"
         onClick={() => {
-          isBookMarked
+          bookmarkList.includes(company.id)
             ? uncheckBookmark(company.id)
             : checkBookmark(company.id);
-          isBookMarked
-            ? setIsBookMarked(!isBookMarked)
-            : setIsBookMarked(!isBookMarked);
         }}
       >
         <path
@@ -56,8 +47,8 @@ const Recruit = ({ company, bookmarked }) => {
         ></path>
         <path
           d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-          fill={isBookMarked ? '#3366FF' : 'black'}
-          fillOpacity={isBookMarked ? null : '0.25'}
+          fill={bookmarkList.includes(company.id) ? '#3366FF' : 'black'}
+          fillOpacity={bookmarkList.includes(company.id) ? null : '0.25'}
         ></path>
       </svg>
       <span className="recruitment-title" onClick={onClick}>

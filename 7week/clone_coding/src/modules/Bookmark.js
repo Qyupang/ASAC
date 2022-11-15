@@ -19,10 +19,12 @@ export default function bookmark(state = initialState, action) {
   switch (action.type) {
     case SET_BOOKMARK:
       return {
-        bookmarkList: [...new Set(state.bookmarkList.concat(action.id))],
+        ...state,
+        bookmarkList: state.bookmarkList.concat(action.id),
       };
     case REMOVE_BOOKMARK:
       return {
+        ...state,
         bookmarkList: state.bookmarkList.filter((id) => id !== action.id),
       };
     default:

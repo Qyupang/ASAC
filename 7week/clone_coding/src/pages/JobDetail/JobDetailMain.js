@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-import Recruit from '../JobList/Recruit';
 import JobDetailSlider from './JobDetailSlider';
 import HiddenDescript from './HiddenDescript';
 import JobDetailHeader from './JobDetailHeader';
 import StickyReward from './StickyReward';
 import JobDetailTechStacks from './JobDetailTechStacks';
-import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
 import JobDetailAnouncement from './JobDetailAnouncement';
 import JobDetailCompany from './JobDetailCompany';
 import JobDetailMainContent from './JobDetailMainContent';
-import { Link } from 'react-router-dom';
 import ShowScroll from '../JobList/ShowScroll';
 
 const JobDetailMain = ({ pageId }) => {
@@ -66,9 +63,6 @@ const JobDetailMain = ({ pageId }) => {
         </span>
         <section className="recruitment-announcement">
           <ul className="recruitments">
-            {/* {dummyForRecruitment.companies.map((company) => (
-              <Recruit company={company} key={company.id} />
-            ))} */}
             <ShowScroll />
           </ul>
         </section>

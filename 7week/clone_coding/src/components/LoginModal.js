@@ -103,14 +103,6 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
           <label for="email" className="label-for-email">
             이메일
           </label>
-          {/* <input
-            type="email"
-            id="email"
-            placeholder="이메일을 입력해주세요."
-            value={email}
-            onChange={emailChange}
-            className={newClassName}
-          /> */}
           <EmailInput
             type="email"
             id="email"

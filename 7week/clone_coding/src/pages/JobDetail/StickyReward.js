@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -12,20 +11,14 @@ const StickyReward = () => {
   const checkBookmark = (id) => dispatch(setBookmark(id));
   const uncheckBookmark = (id) => dispatch(removeBookmark(id));
 
-  const bookmarkList = useSelector((state) => state);
-  const listOfBookmark = bookmarkList?.bookmark?.bookmarkList;
-  const [isBookMarked, setIsBookMarked] = useState(
-    listOfBookmark ? listOfBookmark.includes(Number(id)) : false
-  );
+  const bookmarkList = useSelector((state) => state.bookmark.bookmarkList);
 
   const handleUncheck = () => {
     uncheckBookmark(Number(id));
-    setIsBookMarked(!isBookMarked);
   };
 
   const handleCheck = () => {
     checkBookmark(Number(id));
-    setIsBookMarked(!isBookMarked);
   };
 
   return (
@@ -51,7 +44,7 @@ const StickyReward = () => {
       <button
         className="sticky-reward__bookmark sticky-btn"
         onClick={() => {
-          isBookMarked ? handleUncheck() : handleCheck();
+          bookmarkList.includes(Number(id)) ? handleUncheck() : handleCheck();
         }}
       >
         <svg
@@ -70,10 +63,12 @@ const StickyReward = () => {
           ></path>
           <path
             d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-            fill={isBookMarked ? '#3366FF' : 'white'}
+            fill={bookmarkList.includes(Number(id)) ? '#3366FF' : 'white'}
           ></path>
         </svg>
-        <span>{isBookMarked ? '북마크 완료' : '북마크하기'}</span>
+        <span>
+          {bookmarkList.includes(Number(id)) ? '북마크 완료' : '북마크하기'}
+        </span>
       </button>
       <button className="sticky-reward__apply sticky-btn">지원하기</button>
       <div className="sticky-reward__footer">
