@@ -1,9 +1,31 @@
 import React, { useState } from 'react';
+import styled, { css } from 'styled-components';
 import WarningMessage from './WarningMessage';
 import useInput from '../hooks/useInput';
 
+const EmailInput = styled.input`
+  width: 330px;
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #e1e2e3;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  margin: 0 0 8px;
+
+  ${(props) =>
+    !props.isMatch &&
+    css`
+      &:focus {
+        outline: 2px solid red;
+      }
+    `}
+`;
+
 const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
-  const [newClassName, setNewClassName] = useState('');
+  const [isMatch, setIsMatch] = useState(true);
 
   const localStorage = window.localStorage;
 
@@ -25,10 +47,10 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
       /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
     if (!regex.test(email)) {
-      setNewClassName('newClassName');
+      setIsMatch(false);
       return false;
     } else {
-      setNewClassName('');
+      setIsMatch(true);
       return true;
     }
   };
@@ -81,13 +103,21 @@ const LoginModal = ({ setModalOpen, setModalMode, setcheckedEmail }) => {
           <label for="email" className="label-for-email">
             이메일
           </label>
-          <input
+          {/* <input
             type="email"
             id="email"
             placeholder="이메일을 입력해주세요."
             value={email}
             onChange={emailChange}
             className={newClassName}
+          /> */}
+          <EmailInput
+            type="email"
+            id="email"
+            placeholder="이메일을 입력해주세요."
+            value={email}
+            onChange={emailChange}
+            isMatch={isMatch}
           />
           {!isValidEmail && <WarningMessage warn={'이메일'} />}
         </form>

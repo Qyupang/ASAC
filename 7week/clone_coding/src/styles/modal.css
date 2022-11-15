@@ -58,7 +58,7 @@
   height: 101px;
 }
 
-#email {
+/* #email {
   width: 330px;
   height: 50px;
   padding-right: 15px;
@@ -69,7 +69,7 @@
   font-size: 15px;
   color: #333;
   margin: 0 0 8px;
-}
+} */
 
 .email-disabled {
   background-color: #f2f4f7 !important;
