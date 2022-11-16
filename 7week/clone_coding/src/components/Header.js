@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/style.css';
 import LoginButton from './LoginButton';
 import { Link } from 'react-router-dom';
 import SearchButton from './SearchButton';

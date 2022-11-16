@@ -8,6 +8,7 @@ import JobDetailAnouncement from './JobDetailAnouncement';
 import JobDetailCompany from './JobDetailCompany';
 import JobDetailMainContent from './JobDetailMainContent';
 import ShowScroll from '../JobList/ShowScroll';
+import JobDetailAccordian from './JobDetailAccordian';
 
 const JobDetailMain = ({ pageId }) => {
   const [hidden, setHidden] = useState(true);
@@ -40,7 +41,7 @@ const JobDetailMain = ({ pageId }) => {
           <div className="job-detail__warning">
             <div className="job-deatil__warning-top">
               <i className="fa-solid fa-circle-exclamation"></i>
-              <div className="job-detail__warning-right">
+              {/* <div className="job-detail__warning-right">
                 <span>
                   본 채용정보는 원티드랩의 동의없이 무단전재, 재배포, 재가공할
                   수 없으며, 구직활동 이외의 <br />
@@ -50,9 +51,10 @@ const JobDetailMain = ({ pageId }) => {
                   className="fa-solid fa-chevron-down"
                   onClick={toggleHidden}
                 ></i>
-              </div>
+              </div> */}
+              <JobDetailAccordian pageId={pageId} />
             </div>
-            {!hidden && <HiddenDescript pageId={pageId} />}
+            {/* {!hidden && <HiddenDescript pageId={pageId} />} */}
           </div>
         </div>
         <StickyReward />

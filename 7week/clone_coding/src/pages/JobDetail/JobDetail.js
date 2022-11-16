@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import JobDetailMain from './JobDetailMain';
-import '../../styles/style.css';
 import { useParams } from 'react-router-dom';
 
 const JobDetail = () => {
