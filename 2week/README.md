@@ -4,27 +4,12 @@
 
 ---
 
-2주차 목표:
+## 2주차 목표:
+
+---
 
 > 자바스크립트 기본 문법 & ES6 문법 익히기
 > [모던자바스크립트](https://ko.javascript.info/) 참고
-
-### 클론할 화면
-
----
-
-![채용공고상세페이지](./clone_coding/img/Untitled.png)
-
-![모달창1](./clone_coding/img/Untitled1.png)
-
-![모달창2](./clone_coding/img/Untitled2.png)
-
-### 구현한 화면
-
----
-
-![구현화면](./clone_coding/img/Untitled4.gif)
-![구현화면기능](./clone_coding/img/Untitled5.gif)
 
 ### 2주차 구현 내용
 
@@ -53,3 +38,20 @@
    ex) 이메일, 비밀번호 유효성 검사
 
 3. 자바스크립트를 자유롭게 다루지는 못하는 것 같습니다.
+
+### 클론할 화면
+
+---
+
+![채용공고상세페이지](./clone_coding/img/Untitled.png)
+
+![모달창1](./clone_coding/img/Untitled1.png)
+
+![모달창2](./clone_coding/img/Untitled2.png)
+
+### 구현한 화면
+
+---
+
+![구현화면](./clone_coding/img/Untitled4.gif)
+![구현화면기능](./clone_coding/img/Untitled5.gif)
