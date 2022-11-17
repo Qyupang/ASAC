@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/style.css';
 import InsightContent from './InsightContent';
 import ArticleContent from './ArticleContent';
 import VodContent from './VodContent';

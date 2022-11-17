@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import LoginModal from './LoginModal';
 import RegisterModal from './RegisterModal';
-import '../styles/modal.css';
 import EnrollTerm from './EnrollTerm';
 import PasswordModal from './PasswordModal';
 

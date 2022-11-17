@@ -11,17 +11,17 @@ header {
 
 .header {
   display: flex;
-  width: 1060px;
+  width: 66.25rem;
   justify-content: space-between;
 }
 
 .left-side {
   display: flex;
-  height: 50px;
-  width: 106px;
+  height: 3.125rem;
+  width: 6.625rem;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -30,7 +30,7 @@ header {
 }
 
 .left-side i {
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 .header-nav {
@@ -42,26 +42,26 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 550px;
-  height: 50px;
-  font-size: 14px;
+  width: 34.375rem;
+  height: 3.125rem;
+  font-size: 0.875rem;
   font: #757575;
 }
 
 .header-nav li {
-  padding: 15px;
+  padding: 0.9375rem;
   position: relative;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.25rem;
   display: inline-block;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .header-nav li:hover {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  top: 1px;
+  top: 0.0625rem;
 }
 
 .cursor:hover {
@@ -77,8 +77,8 @@ header {
 .sup-new::after {
   content: 'New';
   position: absolute;
-  top: 9.5px;
-  left: 60px;
+  top: 0.5938rem;
+  left: 3.75rem;
   scale: 0.6;
   color: #5688ff;
   font-weight: 400;
@@ -88,8 +88,8 @@ header {
 .sup-beta::after {
   content: 'Beta';
   position: absolute;
-  top: 9.5px;
-  left: 77px;
+  top: 0.5938rem;
+  left: 4.8125rem;
   scale: 0.6;
   color: #5688ff;
   font-weight: 400;
@@ -98,20 +98,20 @@ header {
 .right-side {
   display: flex;
   justify-content: space-around;
-  height: 50px;
-  width: 271px;
-  font-size: 14px;
+  height: 3.125rem;
+  width: 16.9375rem;
+  font-size: 0.875rem;
   align-items: center;
   font: #757575;
 }
 
 .corporate-service {
-  border-radius: 15px;
-  padding: 5px 8px;
-  font-size: 13px;
+  border-radius: 0.9375rem;
+  padding: 0.3125rem 0.5rem;
+  font-size: 0.8125rem;
   background-color: inherit;
   opacity: 0.4;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 0.0625rem solid rgba(0, 0, 0, 0.3);
 }
 
 a {
@@ -130,13 +130,41 @@ a {
 
 .header__loggedin-icon__bell {
   color: #333;
-  font-size: 18px;
-  margin: 0 18px 0px 10px;
+  font-size: 1.125rem;
+  margin: 0 1.125rem 0rem 0.625rem;
 }
 
 .header__loggedin-icon__avatar {
-  height: 28px;
+  height: 1.75rem;
   cursor: pointer;
-  border: 1px solid #333;
+  border: 0.0625rem solid #333;
   border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+  .header {
+    display: block;
+    margin-left: 20px;
+    width: 742.5px;
+  }
+  .header-nav {
+    display: inline-block;
+  }
+  .header-nav ul {
+    display: inline-block;
+    width: 470px;
+  }
+  .header-nav li {
+    font-size: 13px;
+    padding: 11px 10px 19px;
+  }
+  .right-side {
+    display: inline-block;
+  }
+  .corporate-service {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
 }

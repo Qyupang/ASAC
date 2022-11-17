@@ -5,11 +5,8 @@ import SearchButton from './SearchButton';
 import Hamburger from './Hamburger';
 import LoggedUserIcon from './LoggedUserIcon';
 import { useDispatch, useSelector } from 'react-redux';
-import { logout } from '../modules/Login';
 
 function Header() {
-  // const dispatch = useDispatch();
-
   const isLogined = useSelector((state) => state.login.logged);
 
   return (

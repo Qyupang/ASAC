@@ -1,41 +1,40 @@
-/* 세번째 페이지 */
-
 .main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100vw;
 }
 
 .more-positions__title {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #333;
   line-height: normal;
 }
 
 .more-positions {
-  width: 1060px;
+  width: 66.25rem;
+  border: 1px solid black;
 }
 
 .recruitment-announcement {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  width: 1060px;
+  justify-content: space-around; */
+  width: 66.25rem;
+  border: 1px solid black;
 }
 
 .recruitments {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 30px;
-  gap: 20px;
+  margin-bottom: 1.875rem;
+  gap: 1.25rem;
 }
 
 .recruitments:first-child {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .recruitment {
@@ -56,20 +55,20 @@
 }
 
 .recruitment-image {
-  width: 250px;
-  height: 185px;
+  width: 15.625rem;
+  height: 11.5625rem;
   position: relative;
   background-size: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
   cursor: pointer;
 }
 
 .recruitment-title {
   color: #333;
-  font-size: 18px;
-  margin-top: 15px;
-  width: 250px;
+  font-size: 1.125rem;
+  margin-top: 0.9375rem;
+  width: 15.625rem;
   font-weight: 600;
   line-height: 1.2;
   max-height: 2.4em;
@@ -83,7 +82,7 @@
 
 .recruitment-company {
   color: #333;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: normal;
   overflow: hidden;
@@ -91,43 +90,43 @@
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   cursor: pointer;
 }
 
 .response-rate {
-  border: 1px solid #00aead;
+  border: 0.0625rem solid #00aead;
   color: #00aead;
   border-radius: 2px;
   background: #fff;
   display: inline-block;
-  width: 67px;
-  font-size: 10px;
+  width: 4.1875rem;
+  font-size: 0.625rem;
   font-weight: 600;
-  height: 19px;
-  line-height: 19px;
-  margin-top: 4px;
-  padding: 0 5px;
+  height: 1.1875rem;
+  line-height: 1.1875rem;
+  margin-top: 0.25rem;
+  padding: 0 0.3125rem;
   cursor: pointer;
 }
 
 .location {
   font-weight: 400;
   color: #999;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: normal;
   text-align: left;
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   cursor: pointer;
 }
 
 .incentive {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   color: #333;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   text-align: left;
   width: 100%;
@@ -137,35 +136,35 @@
 }
 
 .job-detail {
-  width: 1060px;
-  height: 6379px;
+  width: 66.25rem;
+  height: 398.6875rem;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px 80px;
-  margin-top: 50px;
+  padding: 1.25rem 0px 5rem;
+  margin-top: 3.125rem;
 }
 
 .job-detail__hidden {
-  width: 1060px;
-  height: 6590px;
+  width: 66.25rem;
+  height: 411.875rem;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px 80px;
-  margin-top: 50px;
+  padding: 1.25rem 0px 5rem;
+  margin-top: 3.125rem;
 }
 
 .more-positions .bookmark-icon {
   position: absolute;
   z-index: 0;
-  left: 230px;
-  top: 10px;
+  left: 14.375rem;
+  top: 0.625rem;
   font-weight: 400;
   color: #999;
   cursor: pointer;
 }
 
 .job-detail__main {
-  width: 700px;
+  width: 43.75rem;
 }
 
 .job-detail__images {
@@ -175,21 +174,21 @@
 }
 
 .job-detail__image {
-  width: 700px;
-  height: 490px;
+  width: 43.75rem;
+  height: 30.625rem;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .sticky-reward {
   border: 1px solid #e1e2e3;
   background-color: #fff;
   border-radius: 3px;
-  width: 298px;
-  height: 274.72px;
-  padding: 24px 20px;
+  width: 18.625rem;
+  height: 17.17rem;
+  padding: 1.5rem 1.25rem;
   position: sticky;
-  top: 70px;
+  top: 4.375rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -668,4 +667,12 @@ h6 {
 .strong {
   font-weight: 800;
   font-size: 13px;
+}
+
+@media (max-width: 1000px) {
+  .recruitments {
+    gap: 1.25rem;
+    width: 1000px;
+    margin: 0 auto;
+  }
 }

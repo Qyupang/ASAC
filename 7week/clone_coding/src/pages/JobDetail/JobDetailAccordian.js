@@ -1,7 +1,6 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import dummyForRecruitment from '../../db/JobList/recruitmentCompany.json';
-// import 'bootstrap/dist/css/bootstrap.css';
 
 const JobDetailAccordian = ({ pageId }) => {
   const company = dummyForRecruitment.companies.filter(

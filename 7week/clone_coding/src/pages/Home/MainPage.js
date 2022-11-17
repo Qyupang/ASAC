@@ -3,12 +3,10 @@ import HomeMain from './HomeMain';
 
 const MainPage = () => {
   return (
-    // <div className="root">
     <>
       <HomeMain />
       <Footer />
     </>
-    // </div>
   );
 };
 

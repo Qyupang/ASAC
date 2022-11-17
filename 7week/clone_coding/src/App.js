@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import SearchPage from './pages/Search/SearchPage';
 import Bookmarks from './pages/Bookmark/Bookmarks';
 import ScrollToTop from './ScrollToTop';
+import './styles/style.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

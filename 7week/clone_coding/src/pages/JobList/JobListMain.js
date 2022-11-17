@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ShowScroll from './ShowScroll';
 import TopSectionCompany from './TopSectionCompany';
 import dummyForTopSection from '../../db/JobList/topSectionCompany.json';
+import '../../styles/style.css';
 
 const JobListMain = () => {
   return (

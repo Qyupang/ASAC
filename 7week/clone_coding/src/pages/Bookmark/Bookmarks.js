@@ -10,8 +10,6 @@ const Bookmarks = () => {
     bList.bookmark.bookmarkList.includes(company.id)
   );
 
-  console.log(companyList);
-
   return (
     <div className="bookmark-page">
       <div className="bookmark-page__header">
