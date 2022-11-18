@@ -17,6 +17,7 @@ function App() {
         <ScrollToTop />
         <Header />
         <Routes>
+          <Route path="/ASAC" element={<MainPage />}></Route>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/wdlist" element={<Joblist />}></Route>
           <Route path="/wd/:id" element={<JobDetail />}></Route>
