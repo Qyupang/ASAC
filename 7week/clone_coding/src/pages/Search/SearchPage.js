@@ -19,8 +19,6 @@ const SearchPage = () => {
       company.position.includes(searchKeyword)
   );
 
-  console.log(companyList);
-
   const companyNameList = companyList.map((company) => company.companyName);
 
   const companyNameSet = [...new Set(companyNameList)];

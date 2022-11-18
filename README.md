@@ -1,4 +1,4 @@
-# Wanted 클론 코딩
+# [Wanted](https://www.wanted.co.kr/) 클론 코딩
 
 ## 클론 코딩 기간: 22/09/28 ~
 
