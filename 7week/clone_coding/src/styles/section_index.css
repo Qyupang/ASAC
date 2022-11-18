@@ -49,7 +49,6 @@ section .title {
 .banner-descript__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   height: 100%;
 }
 
@@ -57,6 +56,7 @@ section .title {
   font-size: 20px;
   margin: 20px 20px 0;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .line {
@@ -74,11 +74,14 @@ section .title {
   text-decoration: none;
   font-size: 14px;
   color: #3366ff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .banner-descript__descript {
   font-size: 14px;
+  line-height: 1.64;
+  color: #333;
+  height: 44px;
   margin: 0px 20px;
   opacity: 0.7;
 }
@@ -539,36 +542,6 @@ section .title {
   margin-top: 10px;
 }
 
-/* .slick-prev::before {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 30px;
-  height: 60px;
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255, 0.7) !important;
-  font-size: 16px;
-  cursor: pointer;
-  bottom: 0px;
-  left: 120px;
-}
-
-.slick-next::before {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 30px;
-  height: 60px;
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255, 0.7) !important;
-  font-size: 16px;
-  cursor: pointer;
-  bottom: 0px;
-  right: 120px;
-} */
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -578,23 +551,5 @@ section .title {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@media (max-width: 1235px) {
-  .banners .slick-track {
-    height: 300px;
-  }
-  .banners .slick-list {
-    height: 300px;
-  }
-  .banners .slick-slide {
-    height: 100px;
-  }
-  .career-insight__buttons .slick-track {
-    height: 60px;
-  }
-  .career-insight__buttons .slick-list {
-    height: 60px;
   }
 }

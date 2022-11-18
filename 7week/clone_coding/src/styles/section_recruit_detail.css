@@ -665,11 +665,3 @@ h6 {
   font-weight: 800;
   font-size: 13px;
 }
-
-@media (max-width: 1000px) {
-  .recruitments {
-    gap: 1.25rem;
-    width: 1000px;
-    margin: 0 auto;
-  }
-}
