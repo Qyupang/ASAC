@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/github.io/ASAC/static/css/main.f03256e2.css",
-    "main.js": "/github.io/ASAC/static/js/main.d7c549d4.js",
-    "static/media/slick.svg": "/github.io/ASAC/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/github.io/ASAC/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/github.io/ASAC/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/github.io/ASAC/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/github.io/ASAC/index.html",
-    "main.f03256e2.css.map": "/github.io/ASAC/static/css/main.f03256e2.css.map",
-    "main.d7c549d4.js.map": "/github.io/ASAC/static/js/main.d7c549d4.js.map"
+    "main.css": "/ASAC/static/css/main.c90858ad.css",
+    "main.js": "/ASAC/static/js/main.f1267f18.js",
+    "static/media/slick.svg": "/ASAC/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ASAC/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ASAC/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ASAC/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ASAC/index.html",
+    "main.c90858ad.css.map": "/ASAC/static/css/main.c90858ad.css.map",
+    "main.f1267f18.js.map": "/ASAC/static/js/main.f1267f18.js.map"
   },
   "entrypoints": [
-    "static/css/main.f03256e2.css",
-    "static/js/main.d7c549d4.js"
+    "static/css/main.c90858ad.css",
+    "static/js/main.f1267f18.js"
   ]
 }
