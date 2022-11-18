@@ -1,3 +1,43 @@
+@media (max-width: 1234px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .banners .slick-track {
+    height: 400px;
+  }
+  .banners .slick-list {
+    height: 400px;
+  }
+
+  .banner-descript {
+    bottom: -147px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-descript__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .banner-descript__descript {
+    font-size: 13px;
+    font-weight: 500;
+    height: 22px;
+    margin: 0;
+  }
+
+  .banner-link {
+    margin: 0;
+  }
+
+  .banner-descript .line {
+    display: none;
+  }
+}
+
 @media (max-width: 1079px) {
   .header {
     display: block;
@@ -83,44 +123,91 @@
     position: absolute;
     left: 90%;
   }
-}
-
-@media (max-width: 1234px) {
-  .banner {
-    display: flex;
-    flex-direction: column;
+  .main-banner {
+    margin-top: 50px;
   }
-  .banners .slick-track {
-    height: 400px;
+  .career-insight__buttons {
+    width: 90%;
+  }
+  .career-insight__buttons .slick-slider {
+    width: 100%;
+  }
+  .career-insight__buttons .slick-list {
+    width: 100%;
+  }
+  .banner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .banners {
+    width: 90%;
   }
   .banners .slick-list {
-    height: 400px;
+    width: 90%;
+  }
+  .banners .slick-track {
+    width: 100px;
   }
 
-  .banner-descript {
-    bottom: -147px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
+  .career-insight {
+    width: 90%;
   }
 
-  .banner-descript__title {
-    font-size: 18px;
-    font-weight: 700;
+  .article {
+    width: 90%;
   }
 
-  .banner-descript__descript {
-    font-size: 13px;
-    font-weight: 500;
-    height: 22px;
-    margin: 0;
+  .vod {
+    width: 90%;
+  }
+  .recommendation {
+    width: 90%;
   }
 
-  .banner-link {
-    margin: 0;
+  .event {
+    width: 90%;
   }
 
-  .banner-descript .line {
+  .subscribe {
     display: none;
+  }
+
+  .nav-career-menu {
+    width: 90%;
+  }
+}
+
+@media (max-width: 991px) {
+  .career-insight__contents {
+    gap: 1.7%;
+  }
+
+  .career-insight__content {
+    width: calc(100% / 3 - 0.625rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .career-insight__contents {
+    gap: 2.9%;
+  }
+
+  .career-insight__content {
+    width: calc(100% / 2 - 0.625rem);
+  }
+  .event-content {
+    width: 100%;
+  }
+  .event-content:last-child {
+    display: none;
+  }
+  .nav-career__box {
+    width: calc(100% / 2 - 1px);
+  }
+  .nav-career__box:first-child {
+    border-bottom: 1px solid #aaaaaa;
+  }
+  .nav-career__box:nth-child(2) {
+    border-bottom: 1px solid #aaaaaa;
   }
 }
