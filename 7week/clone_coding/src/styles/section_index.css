@@ -580,3 +580,21 @@ section .title {
     opacity: 1;
   }
 }
+
+@media (max-width: 1235px) {
+  .banners .slick-track {
+    height: 300px;
+  }
+  .banners .slick-list {
+    height: 300px;
+  }
+  .banners .slick-slide {
+    height: 100px;
+  }
+  .career-insight__buttons .slick-track {
+    height: 60px;
+  }
+  .career-insight__buttons .slick-list {
+    height: 60px;
+  }
+}

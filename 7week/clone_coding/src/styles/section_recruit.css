@@ -8,7 +8,8 @@
 }
 
 .category-wrap {
-  width: 1060px;
+  /* width: 1060px; */
+  width: 100%;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -138,6 +139,10 @@ select {
   font-size: 14px;
 }
 
+.category-buttons {
+  width: 1060px;
+}
+
 .category-button {
   font-size: 13px;
   margin: 0px 8px 0px 0px;
@@ -158,15 +163,13 @@ select {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 30px;
-  width: 100vw;
 }
 
 .top-section {
   display: flex;
   flex-direction: column;
-  width: 1060px;
+  width: 66.25rem;
   margin-bottom: 10px;
-
   justify-content: center;
   margin-top: 30px;
 }
@@ -180,16 +183,16 @@ select {
 }
 
 .top-section__title {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   letter-spacing: -0.3px;
   color: #333;
-  margin: 20px 0 14px;
+  margin: 1.25rem 0 0.875rem;
 }
 
 .top-setion__companies {
   display: flex;
-  width: 1060px;
+  width: 66.25rem;
   justify-content: space-between;
 }
 
@@ -197,9 +200,10 @@ select {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 271px;
+  height: 16.9375rem;
   cursor: pointer;
   overflow: hidden;
+  width: calc(100% / 5 - 10px);
 }
 
 .top-section__company:hover {
@@ -213,12 +217,10 @@ select {
 
 .top-section__company-header {
   overflow: hidden;
-  width: 193px;
 }
 
 .banner-image {
   height: 147px;
-  width: 197px;
   border-radius: 3px 3px 0 0;
   background-position: 50%;
   background-size: cover;
@@ -240,12 +242,13 @@ select {
 .top-section__company-footer {
   display: flex;
   flex-direction: column;
-  padding: 34px 16px 0px;
-  height: 90px;
+  padding: 2.125rem 1rem 0rem;
+  height: 5.625rem;
   border: 1px solid #e1e2e3;
   border-top: none;
   border-radius: 0 0 3px 3px;
   position: relative;
+  /* width: 100%; */
 }
 
 .company-name {

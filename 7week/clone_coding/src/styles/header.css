@@ -141,11 +141,11 @@ a {
   border-radius: 50%;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .header {
     display: block;
     margin-left: 20px;
-    width: 742.5px;
+    width: 90%;
   }
   .header-nav {
     display: inline-block;
@@ -167,4 +167,4 @@ a {
   .bar {
     display: none;
   }
-}
+} */

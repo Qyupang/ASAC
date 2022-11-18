@@ -9,6 +9,7 @@
 @import 'hamburger.css';
 @import 'search.css';
 @import 'bookmark.css';
+@import 'mediaQuery.css';
 
 body {
   font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
