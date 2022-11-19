@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import SearchButton from './SearchButton';
 import Hamburger from './Hamburger';
 import LoggedUserIcon from './LoggedUserIcon';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 function Header() {
   const isLogined = useSelector((state) => state.login.logged);

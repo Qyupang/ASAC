@@ -4,15 +4,28 @@ import HambergerMenus from './HambergerMenus';
 const Hamburger = () => {
   const [mouseOn, setMouseOn] = useState(false);
 
-  const showMenus = () => {
+  const showMenu = () => {
     setMouseOn(true);
-    console.log('hi');
+  };
+
+  const closeMenu = () => {
+    setMouseOn(false);
+  };
+
+  const handleOnclick = () => {
+    setMouseOn(!mouseOn);
   };
 
   return (
     <>
-      <i className="fa-solid fa-bars cursor" onMouseOver={showMenus}></i>
-      {mouseOn && <HambergerMenus setMouseOn={setMouseOn} />}
+      <i
+        className="fa-solid fa-bars cursor"
+        onMouseOver={showMenu}
+        onClick={handleOnclick}
+      ></i>
+      {mouseOn && (
+        <HambergerMenus setMouseOn={setMouseOn} onMouseLeave={closeMenu} />
+      )}
     </>
   );
 };
