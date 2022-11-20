@@ -2,6 +2,8 @@
 
 > [Wanted](https://www.wanted.co.kr/) 웹 사이트 클론 코딩을 진행하였습니다.
 
+![내가 구현한 메이페이지](./1week/img/qyupang_wanted.png)
+
 ## 클론 코딩 기간
 
 ---
