@@ -1,0 +1,142 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: #e5e5e5 1px solid;
+  padding-top: 3px;
+  position: fixed;
+  background: white;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  width: 66.25rem;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  height: 3.125rem;
+  width: 6.625rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.left-side i {
+  margin-top: 0.25rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 34.375rem;
+  height: 3.125rem;
+  font-size: 0.875rem;
+  font: #757575;
+}
+
+.header-nav li {
+  padding: 0.9375rem;
+  position: relative;
+  font-weight: 600;
+  line-height: 1.25rem;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+.header-nav li:hover {
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  top: 0.0625rem;
+}
+
+.cursor:hover {
+  cursor: pointer;
+}
+
+.none::after {
+  height: 100%;
+  content: '';
+  display: inline-block;
+}
+
+.sup-new::after {
+  content: 'New';
+  position: absolute;
+  top: 0.5938rem;
+  left: 3.75rem;
+  scale: 0.6;
+  color: #5688ff;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.sup-beta::after {
+  content: 'Beta';
+  position: absolute;
+  top: 0.5938rem;
+  left: 4.8125rem;
+  scale: 0.6;
+  color: #5688ff;
+  font-weight: 400;
+}
+
+.right-side {
+  display: flex;
+  justify-content: space-around;
+  height: 3.125rem;
+  width: 16.9375rem;
+  font-size: 0.875rem;
+  align-items: center;
+  font: #757575;
+}
+
+.corporate-service {
+  border-radius: 0.9375rem;
+  padding: 0.3125rem 0.5rem;
+  font-size: 0.8125rem;
+  background-color: inherit;
+  opacity: 0.4;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bar {
+  opacity: 0.2;
+}
+
+.header__loggedin-icon {
+  display: flex;
+  align-items: center;
+}
+
+.header__loggedin-icon__bell {
+  color: #333;
+  font-size: 1.125rem;
+  margin: 0 1.125rem 0rem 0.625rem;
+}
+
+.header__loggedin-icon__avatar {
+  height: 1.75rem;
+  cursor: pointer;
+  border: 0.0625rem solid #333;
+  border-radius: 50%;
+}

@@ -1,0 +1,61 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import 'header.css';
+@import 'footer.css';
+@import 'modal.css';
+@import 'section_index.css';
+@import 'section_recruit.css';
+@import 'section_recruit_detail.css';
+@import '404.css';
+@import 'hamburger.css';
+@import 'search.css';
+@import 'bookmark.css';
+@import 'mediaQuery.css';
+
+body {
+  font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
+    system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial,
+    Apple SD Gothic Neo, Nanum Gothic, Malgun Gothic, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+i {
+  display: inline-block;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 800;
+  content: '\f014';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+  display: none;
+}
+
+.slcik-track {
+  overflow-y: hidden;
+}
