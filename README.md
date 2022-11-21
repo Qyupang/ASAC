@@ -51,10 +51,10 @@
 
 ### [5주차(10/31 ~ 11/4): 웹 개발 - React(생명주기(Lifecycle), 훅)](https://github.com/Qyupang/ASAC/tree/main/5week)
 
-### [6주차(11/7 ~ 11/11): 웹 개발 - React(상태관리 라이브러리 Redux)](https://github.com/Qyupang/ASAC/tree/main/6week/clone_coding)
+### [6주차(11/7 ~ 11/11): 웹 개발 - React(상태관리 라이브러리 Redux)](https://github.com/Qyupang/ASAC/tree/main/6week)
 
-### [7주차(11/14 ~ 11/18): 웹개발 - React(스타일드 컴포넌트, 반응형 웹)](https://github.com/Qyupang/ASAC/tree/main/7week/clone_coding)
+### [7주차(11/14 ~ 11/18): 웹개발 - React(스타일드 컴포넌트, 반응형 웹)](https://github.com/Qyupang/ASAC/tree/main/7week)
 
-### [8주차(11/21 ~ 11/25): 웹개발 - React(Network, sync/async)](https://github.com/Qyupang/ASAC/tree/main/8week/clone_coding)
+### [8주차(11/21 ~ 11/25): 웹개발 - React(Network, sync/async)](https://github.com/Qyupang/ASAC/tree/main/8week)
 
 ### 9주차(11/28 ~ 12/2): 웹개발 - React(Restful, Token, Login)
