@@ -140,3 +140,7 @@ a {
   border: 0.0625rem solid #333;
   border-radius: 50%;
 }
+
+.header-mores {
+  display: none;
+}

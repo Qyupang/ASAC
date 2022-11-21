@@ -14,6 +14,7 @@ const LoginButton = () => {
       <span className="cursor login-button" onClick={showModal}>
         회원가입/로그인
       </span>
+      <i class="fa-solid fa-ellipsis header-mores"></i>
       {modalOpen && <LoginRegister setModalOpen={setModalOpen} />}
     </>
   );

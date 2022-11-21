@@ -175,6 +175,14 @@
   .nav-career-menu {
     width: 90%;
   }
+
+  .login-button {
+    display: none;
+  }
+  .header-mores {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -188,6 +196,21 @@
 }
 
 @media (max-width: 767px) {
+  .header-wage {
+    display: none;
+  }
+  .header-resume {
+    display: none;
+  }
+  .sup-new {
+    display: none;
+  }
+  .sup-beta {
+    display: none;
+  }
+  .header-freelancer {
+    display: none;
+  }
   .career-insight__contents {
     gap: 2.9%;
   }

@@ -26,21 +26,19 @@ function Header() {
               </li>
             </Link>
             <li>
-              <span className="none" onClick={() => console.log(isLogined)}>
-                이벤트{' '}
-              </span>
+              <span className="none">이벤트</span>
             </li>
             <li>
-              <span className="none">직군별 연봉 </span>
+              <span className="none header-wage">직군별 연봉 </span>
             </li>
             <li>
-              <span className="none">이력서 </span>
+              <span className="none header-resume">이력서 </span>
             </li>
             <li>
               <span className="sup-new">커뮤니티 </span>
             </li>
             <li>
-              <span className="none">프리랜서 </span>
+              <span className="none header-freelancer">프리랜서 </span>
             </li>
             <li>
               <span className="sup-beta">AI 합격예측 </span>
