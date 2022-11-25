@@ -8,7 +8,7 @@
 
 ---
 
-> 22/09/28 ~ 22/12/2
+> 22/09/28 ~ 22/11/27
 
 ## 목표
 
@@ -33,9 +33,11 @@
 
 정말 기초적인 부분부터 시작하여 새로운 기술들을 하나씩 쌓아 올리며, 새로 배운 기술이 기존에 구현한 방식을 어떻게 개선해줄 수 있는지를 직접 경험하며 배울 수 있었습니다.
 
-## 아쉬운 점
+1. html, css => react : 리액트를 이용하면 SPA를 쉽게 구현할 수 있고, 화면내에 반복되는 요소들을 컴포넌트로 분해하면 재사용성을 증가시킬 수 있음을 경험할 수 있었습니다.
 
----
+2. props => redux : 상태관리 라이브러리인 redux를 활용하면 props 지옥에서 벗어날 수 있고, state를 전역적으로 사용할 수 있음을 배웠습니다.
+
+3. css => styled-component : 기존에는 bem 방식을 이용해 각 태그들 마다 길게 이름을 붙여주어 중복을 방지했지만, styled-component를 통해 클래스 이름 지어줄 고민을 줄일 수 있었습니다.
 
 ## 주차별 진행 내용
 
@@ -55,6 +57,4 @@
 
 ### [7주차(11/14 ~ 11/18): 웹개발 - React(스타일드 컴포넌트, 반응형 웹)](https://github.com/Qyupang/ASAC/tree/main/7week)
 
-### [8주차(11/21 ~ 11/25): 웹개발 - React(Network, sync/async)](https://github.com/Qyupang/ASAC/tree/main/8week)
-
-### 9주차(11/28 ~ 12/2): 웹개발 - React(Restful, Token, Login)
+### [8주차(11/21 ~ 11/27): 웹 개발 - 최종 마무리](https://github.com/Qyupang/ASAC/tree/main/8week)
