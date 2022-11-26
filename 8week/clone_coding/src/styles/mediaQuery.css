@@ -36,6 +36,12 @@
   .banner-descript .line {
     display: none;
   }
+  footer {
+    width: 90%;
+  }
+  .company-description {
+    width: 700px;
+  }
 }
 
 @media (max-width: 1079px) {
@@ -183,6 +189,13 @@
     display: inline-block;
     margin-left: 10px;
   }
+
+  footer {
+    width: 90%;
+  }
+  .company-description {
+    width: 600px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -192,6 +205,30 @@
 
   .career-insight__content {
     width: calc(100% / 3 - 0.625rem);
+  }
+
+  .banner-image {
+    height: 7.5rem;
+  }
+  .top-section__company-header .company-image {
+    height: 2.625rem;
+    width: 2.625rem;
+    top: 100px;
+  }
+  .top-section__company {
+    height: 230px;
+  }
+  .article-content img {
+    height: 150px;
+  }
+  .vod-image {
+    height: 140px !important;
+  }
+  .runtime {
+    top: 105px;
+  }
+  .company-description {
+    width: 430px;
   }
 }
 
@@ -232,5 +269,21 @@
   }
   .nav-career__box:nth-child(2) {
     border-bottom: 1px solid #aaaaaa;
+  }
+  .article-content img {
+    height: 130px;
+  }
+  .vod-image {
+    height: 120px !important;
+  }
+  .runtime {
+    top: 88px;
+  }
+  .footer-bottom {
+    display: block;
+    text-align: center;
+  }
+  .company-description {
+    width: 680px;
   }
 }
