@@ -12,12 +12,20 @@
 @import 'mediaQuery.css';
 
 body {
-  font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
+  /* font-family: Pretendard, Pretendard JP, Pretendard Std, -apple-system,
     system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial,
     Apple SD Gothic Neo, Nanum Gothic, Malgun Gothic, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+    Segoe UI Emoji, Segoe UI Symbol, sans-serif; */
   width: 100%;
   height: 100vh;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff%22')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 #root {
