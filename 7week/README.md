@@ -26,4 +26,4 @@
 
 ### 구현한 화면
 
----
+## ![responsive page](./img/responsive.gif)
